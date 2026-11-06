@@ -1,8 +1,17 @@
-# MSU Web Template Suite (DaisyUI + Tailwind CSS)
+# Unofficial MSU Web Template Suite (DaisyUI + Tailwind CSS)
 
 An accessible, mobile-responsive, and modern HTML/CSS template suite specifically crafted for **Michigan State University** research labs, faculty members, project grants, and academic teams.
 
 Built with **Tailwind CSS v3** and **DaisyUI v4**, this template provides a standalone, CMS-independent design system that passes **WCAG 2.1 AA accessibility standards** and can be ported directly into static site generators (Astro, Gatsby, 11ty) or modern JavaScript frameworks (SvelteKit, Next.js).
+
+---
+
+This was made by Pat Bills/ICER as a base to build from for research websites 
+that required updating for Accessibility and Quality. This not official or 
+condoned or accepted by MSU administration.  For official standards and
+brand strategy please see [MSU Communications and Marketing Resources](https://comms.msu.edu/resources)  and the 
+[MSU Digitial Experience Studio](https://dxstudio.msu.edu/website-technology/web-standards)
+
 
 ---
 
