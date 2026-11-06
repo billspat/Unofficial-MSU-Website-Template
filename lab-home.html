@@ -18,66 +18,134 @@
   <!-- HEADER: Tier 1 - MSU Institutional Masthead                               -->
   <!-- ========================================================================= -->
   <header role="banner" class="w-full">
-    <div class="msu-masthead px-4 sm:px-8 py-2.5">
-      <div class="max-w-7xl mx-auto flex items-center justify-between">
-        <a href="https://msu.edu" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2.5 text-white hover:text-emerald-200 transition-colors py-1 group" aria-label="Michigan State University Homepage (opens in new tab)">
-          <svg class="h-6 w-6 text-white group-hover:scale-105 transition-transform shrink-0" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-            <path d="M12 2C6.48 2 2 6.48 2 12c0 3.2 1.5 6.06 3.84 7.9L5 22h4l.84-2.52C10.53 19.82 11.25 20 12 20s1.47-.18 2.16-.52L15 22h4l-.84-2.1C20.5 18.06 22 15.2 22 12c0-5.52-4.48-10-10-10zm0 3c3.87 0 7 3.13 7 7 0 1.9-.76 3.63-2 4.9V13h-2v3.13c-.92.54-1.92.87-3 .87s-2.08-.33-3-.87V13H7v3.9c-1.24-1.27-2-3-2-4.9 0-3.87 3.13-7 7-7z"/>
-          </svg>
-          <span class="font-extrabold tracking-wider text-xs sm:text-sm uppercase font-sans">Michigan State University</span>
-        </a>
-
-        <div class="flex items-center gap-4 text-xs text-emerald-100">
-          <a href="index.html" class="hidden sm:inline-block font-semibold hover:text-white">&larr; Template Index</a>
-          <a href="https://research.msu.edu" target="_blank" rel="noopener noreferrer" class="hover:text-white">MSU Research</a>
+    <!-- ========================================================================= -->
+    <!-- HEADER: Tier 1 - MSU Masthead (Institutional Brand Bar)                   -->
+    <!-- ========================================================================= -->
+    <div class="msu-masthead w-full px-4 sm:px-8 py-2.5 sm:py-3 border-b-2 border-msu-dark">
+      <div class="max-w-7xl mx-auto w-full flex items-center justify-between">
+        <!-- Left: Official MSU Wordmark Lockup (strictly left-aligned) -->
+        <div class="flex items-center justify-start shrink-0">
+          <a href="https://msu.edu" target="_blank" rel="noopener noreferrer" class="flex items-center text-white hover:text-emerald-200 transition-colors py-0.5 group" aria-label="Michigan State University Homepage (opens in new tab)">
+            <svg class="h-6 sm:h-7 md:h-8 w-auto fill-current text-white group-hover:opacity-90 transition-opacity" viewBox="0 0 296 34" fill="currentColor" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Michigan State University">
+              <title>Michigan State University</title>
+    <g transform="translate(0, -0.904)">
+        <path d="M55.7998,20.2675325 C55.7998,16.8896104 58.2998,14.1077922 61.9998,14.1077922 C64.1998,14.1077922 65.5998,14.8032468 66.6998,15.8961039 L64.9998,17.8831169 C64.0998,17.0883117 63.0998,16.5915584 61.9998,16.5915584 C59.9998,16.5915584 58.4998,18.2805195 58.4998,20.2675325 C58.4998,22.2545455 59.8998,23.9435065 61.9998,23.9435065 C63.3998,23.9435065 64.1998,23.4467532 65.0998,22.5525974 L66.7998,24.2415584 C65.5998,25.5331169 64.1998,26.3279221 61.8998,26.3279221 C58.3998,26.3279221 55.7998,23.6454545 55.7998,20.2675325 Z" fill="currentColor"></path>
+        <polygon fill="currentColor" points="68.7998 14.3064935 71.3998 14.3064935 71.3998 18.975974 76.1998 18.975974 76.1998 14.3064935 78.7998 14.3064935 78.7998 26.1292208 76.1998 26.1292208 76.1998 21.3603896 71.3998 21.3603896 71.3998 26.1292208 68.7998 26.1292208"></polygon>
+        <polygon fill="currentColor" points="81.7 26.1292208 84.3 26.1292208 84.3 14.3064935 81.7 14.3064935"></polygon>
+        <path d="M86.7002,20.2675325 L86.7002,20.2675325 C86.7002,16.8896104 89.3002,14.1077922 92.9002,14.1077922 C95.0002,14.1077922 96.3002,14.7038961 97.6002,15.6974026 L96.0002,17.7837662 C95.1002,16.988961 94.3002,16.5915584 92.9002,16.5915584 C91.0002,16.5915584 89.5002,18.2805195 89.5002,20.2675325 C89.5002,22.4532468 91.0002,24.0428571 93.1002,24.0428571 C94.1002,24.0428571 94.9002,23.8441558 95.6002,23.3474026 L95.6002,21.6584416 L93.0002,21.6584416 L93.0002,19.3733766 L98.2002,19.3733766 L98.2002,24.5396104 C97.0002,25.5331169 95.3002,26.4272727 93.1002,26.4272727 C89.3002,26.3279221 86.7002,23.7448052 86.7002,20.2675325" fill="currentColor"></path>
+        <path d="M107.2998,21.261039 L105.6998,17.3863636 L104.0998,21.261039 L107.2998,21.261039 Z M104.5998,14.2071429 L106.9998,14.2071429 L112.0998,26.1292208 L109.3998,26.1292208 L108.2998,23.4467532 L103.2998,23.4467532 L102.1998,26.1292208 L99.4998,26.1292208 L104.5998,14.2071429 Z" fill="currentColor"></path>
+        <polygon fill="currentColor" points="113.7998 14.3064935 116.1998 14.3064935 121.7998 21.5590909 121.7998 14.3064935 124.3998 14.3064935 124.3998 26.1292208 122.1998 26.1292208 116.3998 18.5785714 116.3998 26.1292208 113.7998 26.1292208"></polygon>
+        <path d="M131.3999,24.4404584 L132.8999,22.5527961 C133.9999,23.4469519 135.0999,23.9437052 136.4999,23.9437052 C137.5999,23.9437052 138.1999,23.5463026 138.1999,22.8498545 C138.1999,22.1553935 137.7999,21.8563481 135.7999,21.3595948 C133.3999,20.7644844 131.8999,20.0690299 131.8999,17.7839649 C131.8999,15.5982506 133.5999,14.2073416 136.0999,14.2073416 C137.7999,14.2073416 139.2999,14.7040948 140.4999,15.6976013 L139.0999,17.6846143 C137.9999,16.9891597 136.9999,16.4924065 135.9999,16.4924065 C134.9999,16.4924065 134.4999,16.9891597 134.4999,17.485913 C134.4999,18.2807182 134.9999,18.4794195 137.0999,19.0755234 C139.4999,19.6716273 140.8999,20.5657831 140.8999,22.6521468 C140.8999,25.0365623 139.0999,26.3271273 136.4999,26.3271273 C134.5999,26.3271273 132.7999,25.7320169 131.3999,24.4404584" fill="currentColor"></path>
+        <polygon fill="currentColor" points="145.5 16.6908097 141.9 16.6908097 141.9 14.3063942 151.8 14.3063942 151.8 16.6908097 148.2 16.6908097 148.2 26.1291214 145.6 26.1291214 145.6 16.6908097"></polygon>
+        <path d="M159,21.261039 L157.4,17.3863636 L155.8,21.261039 L159,21.261039 Z M156.2,14.2071429 L158.6,14.2071429 L163.7,26.1292208 L161,26.1292208 L159.9,23.4467532 L154.9,23.4467532 L153.8,26.1292208 L151.1,26.1292208 L156.2,14.2071429 Z" fill="currentColor"></path>
+        <polygon fill="currentColor" points="166.7002 16.6908097 163.0992 16.6908097 163.0992 14.3063942 173.0002 14.3063942 173.0002 16.6908097 169.4002 16.6908097 169.4002 26.1291214 166.8002 26.1291214 166.8002 16.6908097"></polygon>
+        <polygon fill="currentColor" points="174.9004 14.3064935 183.9004 14.3064935 183.9004 16.5915584 177.5004 16.5915584 177.5004 18.975974 183.0994 18.975974 183.0994 21.261039 177.5004 21.261039 177.5004 23.7448052 184.0004 23.7448052 184.0004 26.0298701 174.9004 26.0298701"></polygon>
+        <path d="M191.2998,21.261039 L191.2998,14.4058442 L192.5998,14.4058442 L192.5998,21.1616883 C192.5998,23.7448052 193.9998,25.1357143 196.1998,25.1357143 C198.4008,25.1357143 199.7998,23.8441558 199.7998,21.261039 L199.7998,14.4058442 L201.0998,14.4058442 L201.0998,21.1616883 C201.0998,24.638961 199.0998,26.4272727 196.0998,26.4272727 C193.2998,26.3279221 191.2998,24.5396104 191.2998,21.261039" fill="currentColor"></path>
+        <polygon fill="currentColor" points="204.2998 14.3064935 205.5998 14.3064935 213.0998 23.7448052 213.0998 14.3064935 214.4008 14.3064935 214.4008 26.1292208 213.2998 26.1292208 205.5998 16.3928571 205.5998 26.1292208 204.2998 26.1292208"></polygon>
+        <polygon fill="currentColor" points="217.7 26.1292208 219 26.1292208 219 14.3064935 217.7 14.3064935"></polygon>
+        <polygon fill="currentColor" points="221.5 14.3064935 223 14.3064935 227.2 24.4402597 231.4 14.3064935 232.8 14.3064935 227.7 26.2285714 226.5 26.2285714"></polygon>
+        <polygon fill="currentColor" points="235.0996 14.3064935 243.7006 14.3064935 243.7006 15.4987013 236.4006 15.4987013 236.4006 19.5720779 242.9006 19.5720779 242.9006 20.7642857 236.4006 20.7642857 236.4006 24.937013 243.7006 24.937013 243.7006 26.1292208 234.9996 26.1292208 234.9996 14.3064935"></polygon>
+        <path d="M251.5,20.3664857 C253.3,20.3664857 254.6,19.4733234 254.6,17.9830636 C254.6,16.4928039 253.5,15.6970052 251.6,15.6970052 L247.9,15.6970052 L247.9,20.4668299 L251.5,20.4668299 L251.5,20.3664857 Z M246.5,14.3060961 L251.6,14.3060961 C253.1,14.3060961 254.2,14.7034987 255,15.4992974 C255.6,16.0944078 255.9,16.889213 255.9,17.7833688 C255.9,19.7703818 254.5,20.863239 252.7,21.2606416 L256.4,26.1298169 L254.8,26.1298169 L251.4,21.5586935 L248,21.5586935 L248,26.1298169 L246.7,26.1298169 L246.7,14.3060961 L246.5,14.3060961 Z" fill="currentColor"></path>
+        <path d="M257.9004,24.4404584 L258.7004,23.4469519 C259.9004,24.5398091 261.0994,25.135913 262.7994,25.135913 C264.4004,25.135913 265.5004,24.3401143 265.5004,23.1489 C265.5004,22.0560429 264.9004,21.459939 262.4004,20.8628416 C259.7004,20.2677312 258.4004,19.3725818 258.4004,17.485913 C258.4004,15.5982506 260.0004,14.3066922 262.2994,14.3066922 C264.0004,14.3066922 265.2994,14.8034455 266.5004,15.7969519 L265.7004,16.7904584 C264.5994,15.8963026 263.5004,15.4989 262.2994,15.4989 C260.7994,15.4989 259.7994,16.2937052 259.7994,17.3865623 C259.7994,18.4794195 260.4004,19.174874 263.0004,19.6716273 C265.7004,20.2677312 266.9004,21.161887 266.9004,23.0495494 C266.9004,25.0365623 265.2004,26.4274714 262.7994,26.4274714 C260.9004,26.3271273 259.2994,25.7320169 257.9004,24.4404584" fill="currentColor"></path>
+        <polygon fill="currentColor" points="269.6 26.1292208 270.901 26.1292208 270.901 14.3064935 269.6 14.3064935"></polygon>
+        <polygon fill="currentColor" points="277.5 15.5978532 273.5 15.5978532 273.5 14.4056455 282.8 14.4056455 282.8 15.5978532 278.8 15.5978532 278.8 26.2283727 277.4 26.2283727 277.4 15.5978532"></polygon>
+        <polygon fill="currentColor" points="289 21.459939 284.1 14.3066922 285.7 14.3066922 289.7 20.2677312 293.7 14.3066922 295.3 14.3066922 290.4 21.459939 290.4 26.1294195 289 26.1294195"></polygon>
+        <path d="M26.7998,3.17902208 C26.7998,3.17902208 25.0998,6.8549961 24.1998,8.64330779 C19.8998,6.65629481 14.2998,6.45759351 9.5998,9.14006104 C6.4998,11.0277234 3.8998,14.4056455 3.6998,18.0816195 C3.5998,20.4660351 4.6998,23.1494961 4.2998,25.6332623 C4.1998,26.9238273 3.8998,28.2153857 3.2998,29.3082429 C2.4998,30.6007948 1.5998,31.6926584 -0.000200000002,31.7920091 C0.2998,31.3946065 2.7998,30.2023987 1.7998,24.738113 C1.3998,22.5523987 -1.6002,17.1874636 1.2998,10.5309701 C3.9998,4.37122987 15.3998,-2.88136753 26.7998,3.17902208" fill="currentColor"></path>
+        <path d="M13.7002,13.9091903 C15.2002,13.412437 16.8002,13.412437 18.4002,13.710489 C21.4002,14.2072422 23.6002,15.9955539 24.7002,18.6780214 C25.8002,21.4598396 26.6002,23.6455539 28.6002,26.0299695 C28.7002,26.1293201 25.6002,25.5332162 25.6002,25.5332162 C26.4002,20.0689305 21.2002,19.8702292 19.7002,21.8572422 C20.8002,23.04945 22.6002,23.6455539 24.1002,23.4468526 C23.8002,28.9111383 25.3002,33.7793201 25.2002,33.7793201 C24.0002,33.5806188 18.3002,30.3020474 16.6002,28.8117877 C14.2002,29.2091903 12.2002,30.1033461 9.4002,30.5007487 C9.3002,30.5007487 9.9002,28.4143851 9.8002,27.4208786 C9.8002,24.5397097 7.6002,21.8572422 9.2002,18.3799695 C10.1002,16.1942552 11.5002,14.7039955 13.7002,13.9091903" fill="currentColor"></path>
+        <path d="M15.7002,12.2200305 L16.1002,12.2200305 C16.1002,12.0213292 16.3002,10.6304201 17.5002,9.73626429 C18.8002,8.64340714 20.5002,8.74275779 20.5002,8.74275779 C18.8002,8.24600455 17.1002,8.1466539 15.9002,8.34535519 L15.7002,12.2200305 Z" fill="currentColor"></path>
+        <path d="M5,17.187563 C4.7,18.7771734 4.7,20.3667838 4.9,21.161589 C4.9,21.161589 5.1,19.7706799 5.9,18.9758747 C6.6,18.2804201 7.5,18.1810695 7.8,18.1810695 C7.8,18.1810695 8,17.6843162 7.9,17.6843162 L5,17.187563 Z" fill="currentColor"></path>
+        <path d="M8.2002,16.8897097 C8.3002,16.6910084 8.4002,16.4923071 8.5002,16.1942552 L5.5002,15.0020474 C5.3002,15.39945 5.2002,15.8962032 5.1002,16.1942552 L8.2002,16.8897097 Z" fill="currentColor"></path>
+        <path d="M9,15.7967532 L9.5,15.2006494 L6.7,13.1142857 C6.4,13.4123377 6.2,13.8097403 6,14.3064935 L9,15.7967532 Z" fill="currentColor"></path>
+        <path d="M10,14.6043468 L10.6,14.0082429 L8.2,11.3257753 C7.7,11.8225286 7.5,12.0212299 7.2,12.4186325 L10,14.6043468 Z" fill="currentColor"></path>
+        <path d="M11.2002,13.7102903 L11.9002,13.3128877 L10.1002,10.1336669 C9.5002,10.4317188 9.0002,10.7297708 8.8002,10.9284721 L11.2002,13.7102903 Z" fill="currentColor"></path>
+        <path d="M12.5,13.0151338 L13.3,12.7170818 L12.3,9.14045844 C11.7,9.33915974 11,9.63721169 10.8,9.73656234 L12.5,13.0151338 Z" fill="currentColor"></path>
+        <path d="M14,12.5183805 L14.8,12.3196792 L14.9,8.4450039 C14.9,8.4450039 14,8.64370519 13.2,8.84240649 L14,12.5183805 Z" fill="currentColor"></path>
+        <polygon fill="currentColor" points="36 14.3064935 38.8 14.3064935 41.9 19.274026 45 14.3064935 47.8 14.3064935 47.8 26.1292208 45.2 26.1292208 45.2 18.3798701 42 23.4467532 41.9 23.4467532 38.6 18.4792208 38.6 26.1292208 36 26.1292208"></polygon>
+        <polygon fill="currentColor" points="50.8 26.1292208 53.4 26.1292208 53.4 14.3064935 50.8 14.3064935"></polygon>
+    </g>
+            </svg>
+          </a>
         </div>
+
+        <!-- Right: Institutional Tools & Search -->
+        <nav aria-label="MSU Institutional Links" class="flex items-center gap-4 text-xs text-emerald-100 font-medium">
+          <a href="https://msu.edu/search" target="_blank" rel="noopener noreferrer" class="hover:text-white flex items-center gap-1.5 py-1 underline-offset-4 hover:underline">
+            <svg class="w-3.5 h-3.5 text-emerald-300" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path></svg>
+            <span class="hidden sm:inline">Search MSU</span>
+          </a>
+          <a href="https://comms.msu.edu/resources/web-standards" target="_blank" rel="noopener noreferrer" class="hidden md:inline-block hover:text-white underline-offset-4 hover:underline">Web Standards</a>
+          <a href="https://research.msu.edu" target="_blank" rel="noopener noreferrer" class="hidden md:inline-block hover:text-white underline-offset-4 hover:underline">MSU Research</a>
+        </nav>
       </div>
     </div>
 
     <!-- ========================================================================= -->
-    <!-- HEADER: Tier 2 - Lab Identity & Accessible Navigation                     -->
+    <!-- HEADER: Tier 2 - Unit / Site Identity & Local Navigation                  -->
     <!-- ========================================================================= -->
-    <div class="msu-unit-bar">
-      <div class="max-w-7xl mx-auto px-4 sm:px-8 py-4">
-        <div class="flex items-center justify-between">
-          <div>
-            <div class="text-xs uppercase tracking-wider text-emerald-800 font-semibold mb-1">
-              <span>College of Natural Science</span>
-              <span class="mx-1 text-slate-300" aria-hidden="true">/</span>
-              <span>Dept. of Computational Mathematics, Science & Engineering</span>
+    <div class="msu-unit-bar w-full">
+      <div class="max-w-7xl mx-auto w-full px-4 sm:px-8 py-3 sm:py-4">
+        <div class="flex items-center justify-between gap-4">
+          <!-- Department Hierarchy & Site Title -->
+          <div class="min-w-0">
+            <div class="text-xs uppercase tracking-wider text-emerald-800 font-semibold mb-0.5 truncate">
+              <span>College of Natural Science</span><span class="mx-1.5 text-slate-300" aria-hidden="true">/</span><span>Dept. of CMSE</span>
             </div>
-            <a href="lab-home.html" class="text-xl sm:text-2xl font-extrabold text-msu-dark hover:text-msu-green transition-colors" aria-current="page">
-              Center for Genomic Intelligence & Machine Learning
+            <a href="lab-home.html" class="text-lg sm:text-2xl font-extrabold text-msu-dark hover:text-msu-green transition-colors block truncate">
+              Center for Genomic Intelligence &amp; Machine Learning
             </a>
+            
           </div>
 
-          <!-- Mobile Menu Hamburger Button -->
-          <button 
-            type="button" 
-            class="md:hidden btn btn-ghost btn-square text-msu-dark" 
-            data-toggle-nav="true" 
-            aria-controls="lab-nav-menu" 
-            aria-expanded="false" 
-            aria-label="Toggle navigation menu"
-          >
-            <svg class="h-6 w-6 nav-icon-open" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
-            </svg>
-            <svg class="h-6 w-6 nav-icon-close hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
-            </svg>
-          </button>
+          <!-- Actions & Mobile Hamburger -->
+          <div class="flex items-center gap-2 sm:gap-3 shrink-0">
+            <a href="components.html" class="btn btn-outline btn-sm border-msu-green text-msu-green hover:bg-msu-green hover:border-msu-green hover:text-white font-semibold hidden lg:inline-flex">
+              <svg class="w-4 h-4 mr-1" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2V6zM14 6a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2V6zM4 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2H6a2 2 0 01-2-2v-2zM14 16a2 2 0 012-2h2a2 2 0 012 2v2a2 2 0 01-2 2h-2a2 2 0 01-2-2v-2z"></path></svg>
+              DaisyUI Components
+            </a>
+            
+            <!-- Mobile Menu Toggle Button (< md) -->
+            <button 
+              type="button" 
+              class="md:hidden btn btn-ghost btn-sm text-msu-dark hover:bg-slate-100 flex items-center gap-1.5 border border-slate-300 px-2.5 py-1.5" 
+              data-toggle-nav="true" 
+              aria-controls="lab-nav-menu" 
+              aria-expanded="false" 
+              aria-label="Toggle navigation menu"
+            >
+              <svg class="h-5 w-5 nav-icon-open" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+              </svg>
+              <svg class="h-5 w-5 nav-icon-close hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+              </svg>
+              <span class="font-bold text-xs uppercase tracking-wider">Menu</span>
+            </button>
+          </div>
         </div>
 
-        <!-- Accessible Navigation Links (Desktop + Collapsible Mobile) -->
-        <nav id="lab-nav-menu" aria-label="Lab Site Navigation" class="hidden md:block mt-4 pt-3 border-t border-slate-200">
-          <ul class="flex flex-col md:flex-row md:items-center gap-1 sm:gap-2 text-sm font-semibold text-slate-700">
-            <li><a href="lab-home.html" class="block px-3 py-2 rounded-md bg-emerald-50 text-msu-green border-b-2 border-msu-green" aria-current="page">Home</a></li>
-            <li><a href="project-detail.html" class="block px-3 py-2 rounded-md hover:bg-slate-100 hover:text-msu-green transition-colors">Research Projects</a></li>
-            <li><a href="publications.html" class="block px-3 py-2 rounded-md hover:bg-slate-100 hover:text-msu-green transition-colors">Publications</a></li>
-            <li><a href="team.html" class="block px-3 py-2 rounded-md hover:bg-slate-100 hover:text-msu-green transition-colors">Team</a></li>
-            <li><a href="faculty-profile.html" class="block px-3 py-2 rounded-md hover:bg-slate-100 hover:text-msu-green transition-colors">Principal Investigator</a></li>
-            <li><a href="content-page.html" class="block px-3 py-2 rounded-md hover:bg-slate-100 hover:text-msu-green transition-colors">Resources & Software</a></li>
+        <!-- Desktop Navigation Bar (>= md) -->
+        <nav aria-label="Desktop Navigation" class="hidden md:block mt-3 pt-3 border-t border-slate-200">
+          <ul class="flex items-center gap-1 sm:gap-2 text-sm font-semibold text-slate-700">
+            <li><a href="lab-home.html" class="px-3 py-1.5 rounded-md bg-emerald-50 text-msu-green border-b-2 border-msu-green font-bold" aria-current="page">Home</a></li>
+            <li><a href="project-detail.html" class="px-3 py-1.5 rounded-md hover:bg-slate-100 hover:text-msu-green transition-colors" >Research Projects</a></li>
+            <li><a href="publications.html" class="px-3 py-1.5 rounded-md hover:bg-slate-100 hover:text-msu-green transition-colors" >Publications</a></li>
+            <li><a href="team.html" class="px-3 py-1.5 rounded-md hover:bg-slate-100 hover:text-msu-green transition-colors" >Team</a></li>
+            <li><a href="faculty-profile.html" class="px-3 py-1.5 rounded-md hover:bg-slate-100 hover:text-msu-green transition-colors" >Principal Investigator</a></li>
+            <li><a href="content-page.html" class="px-3 py-1.5 rounded-md hover:bg-slate-100 hover:text-msu-green transition-colors" >Resources & Software</a></li>
+            <li><a href="components.html" class="px-3 py-1.5 rounded-md hover:bg-slate-100 hover:text-msu-green transition-colors" >UI Components</a></li>
+          </ul>
+        </nav>
+
+        <!-- Collapsible Mobile Navigation Drawer (< md) -->
+        <nav id="lab-nav-menu" aria-label="Mobile Navigation" class="hidden md:hidden mt-3 pt-3 border-t border-slate-200">
+          <ul class="menu bg-slate-50 border border-slate-200 rounded-lg p-2 font-semibold text-sm text-slate-700 shadow-sm space-y-1">
+            <li><a href="lab-home.html" class="bg-emerald-50 text-msu-green font-bold" aria-current="page">Home</a></li>
+            <li><a href="project-detail.html" class="hover:text-msu-green" >Research Projects</a></li>
+            <li><a href="publications.html" class="hover:text-msu-green" >Publications</a></li>
+            <li><a href="team.html" class="hover:text-msu-green" >Team</a></li>
+            <li><a href="faculty-profile.html" class="hover:text-msu-green" >Principal Investigator</a></li>
+            <li><a href="content-page.html" class="hover:text-msu-green" >Resources & Software</a></li>
+            <li><a href="components.html" class="hover:text-msu-green" >UI Components</a></li>
           </ul>
         </nav>
       </div>
@@ -312,12 +380,46 @@
   <footer role="contentinfo" class="msu-footer pt-12 pb-8 px-4 sm:px-8 mt-auto">
     <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 pb-8 border-b border-emerald-900/60">
       <div>
-        <div class="flex items-center gap-2.5 mb-4">
-          <svg class="h-8 w-8 text-white shrink-0" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
-            <path d="M12 2C6.48 2 2 6.48 2 12c0 3.2 1.5 6.06 3.84 7.9L5 22h4l.84-2.52C10.53 19.82 11.25 20 12 20s1.47-.18 2.16-.52L15 22h4l-.84-2.1C20.5 18.06 22 15.2 22 12c0-5.52-4.48-10-10-10zm0 3c3.87 0 7 3.13 7 7 0 1.9-.76 3.63-2 4.9V13h-2v3.13c-.92.54-1.92.87-3 .87s-2.08-.33-3-.87V13H7v3.9c-1.24-1.27-2-3-2-4.9 0-3.87 3.13-7 7-7z"/>
+        <a href="https://msu.edu" target="_blank" rel="noopener noreferrer" class="inline-block text-white hover:text-emerald-200 transition-colors mb-4 group" aria-label="Michigan State University Homepage (opens in new tab)">
+          <svg class="h-8 sm:h-9 w-auto fill-current text-white group-hover:opacity-90 transition-opacity" viewBox="0 0 296 34" fill="currentColor" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Michigan State University">
+            <title>Michigan State University</title>
+    <g transform="translate(0, -0.904)">
+        <path d="M55.7998,20.2675325 C55.7998,16.8896104 58.2998,14.1077922 61.9998,14.1077922 C64.1998,14.1077922 65.5998,14.8032468 66.6998,15.8961039 L64.9998,17.8831169 C64.0998,17.0883117 63.0998,16.5915584 61.9998,16.5915584 C59.9998,16.5915584 58.4998,18.2805195 58.4998,20.2675325 C58.4998,22.2545455 59.8998,23.9435065 61.9998,23.9435065 C63.3998,23.9435065 64.1998,23.4467532 65.0998,22.5525974 L66.7998,24.2415584 C65.5998,25.5331169 64.1998,26.3279221 61.8998,26.3279221 C58.3998,26.3279221 55.7998,23.6454545 55.7998,20.2675325 Z" fill="currentColor"></path>
+        <polygon fill="currentColor" points="68.7998 14.3064935 71.3998 14.3064935 71.3998 18.975974 76.1998 18.975974 76.1998 14.3064935 78.7998 14.3064935 78.7998 26.1292208 76.1998 26.1292208 76.1998 21.3603896 71.3998 21.3603896 71.3998 26.1292208 68.7998 26.1292208"></polygon>
+        <polygon fill="currentColor" points="81.7 26.1292208 84.3 26.1292208 84.3 14.3064935 81.7 14.3064935"></polygon>
+        <path d="M86.7002,20.2675325 L86.7002,20.2675325 C86.7002,16.8896104 89.3002,14.1077922 92.9002,14.1077922 C95.0002,14.1077922 96.3002,14.7038961 97.6002,15.6974026 L96.0002,17.7837662 C95.1002,16.988961 94.3002,16.5915584 92.9002,16.5915584 C91.0002,16.5915584 89.5002,18.2805195 89.5002,20.2675325 C89.5002,22.4532468 91.0002,24.0428571 93.1002,24.0428571 C94.1002,24.0428571 94.9002,23.8441558 95.6002,23.3474026 L95.6002,21.6584416 L93.0002,21.6584416 L93.0002,19.3733766 L98.2002,19.3733766 L98.2002,24.5396104 C97.0002,25.5331169 95.3002,26.4272727 93.1002,26.4272727 C89.3002,26.3279221 86.7002,23.7448052 86.7002,20.2675325" fill="currentColor"></path>
+        <path d="M107.2998,21.261039 L105.6998,17.3863636 L104.0998,21.261039 L107.2998,21.261039 Z M104.5998,14.2071429 L106.9998,14.2071429 L112.0998,26.1292208 L109.3998,26.1292208 L108.2998,23.4467532 L103.2998,23.4467532 L102.1998,26.1292208 L99.4998,26.1292208 L104.5998,14.2071429 Z" fill="currentColor"></path>
+        <polygon fill="currentColor" points="113.7998 14.3064935 116.1998 14.3064935 121.7998 21.5590909 121.7998 14.3064935 124.3998 14.3064935 124.3998 26.1292208 122.1998 26.1292208 116.3998 18.5785714 116.3998 26.1292208 113.7998 26.1292208"></polygon>
+        <path d="M131.3999,24.4404584 L132.8999,22.5527961 C133.9999,23.4469519 135.0999,23.9437052 136.4999,23.9437052 C137.5999,23.9437052 138.1999,23.5463026 138.1999,22.8498545 C138.1999,22.1553935 137.7999,21.8563481 135.7999,21.3595948 C133.3999,20.7644844 131.8999,20.0690299 131.8999,17.7839649 C131.8999,15.5982506 133.5999,14.2073416 136.0999,14.2073416 C137.7999,14.2073416 139.2999,14.7040948 140.4999,15.6976013 L139.0999,17.6846143 C137.9999,16.9891597 136.9999,16.4924065 135.9999,16.4924065 C134.9999,16.4924065 134.4999,16.9891597 134.4999,17.485913 C134.4999,18.2807182 134.9999,18.4794195 137.0999,19.0755234 C139.4999,19.6716273 140.8999,20.5657831 140.8999,22.6521468 C140.8999,25.0365623 139.0999,26.3271273 136.4999,26.3271273 C134.5999,26.3271273 132.7999,25.7320169 131.3999,24.4404584" fill="currentColor"></path>
+        <polygon fill="currentColor" points="145.5 16.6908097 141.9 16.6908097 141.9 14.3063942 151.8 14.3063942 151.8 16.6908097 148.2 16.6908097 148.2 26.1291214 145.6 26.1291214 145.6 16.6908097"></polygon>
+        <path d="M159,21.261039 L157.4,17.3863636 L155.8,21.261039 L159,21.261039 Z M156.2,14.2071429 L158.6,14.2071429 L163.7,26.1292208 L161,26.1292208 L159.9,23.4467532 L154.9,23.4467532 L153.8,26.1292208 L151.1,26.1292208 L156.2,14.2071429 Z" fill="currentColor"></path>
+        <polygon fill="currentColor" points="166.7002 16.6908097 163.0992 16.6908097 163.0992 14.3063942 173.0002 14.3063942 173.0002 16.6908097 169.4002 16.6908097 169.4002 26.1291214 166.8002 26.1291214 166.8002 16.6908097"></polygon>
+        <polygon fill="currentColor" points="174.9004 14.3064935 183.9004 14.3064935 183.9004 16.5915584 177.5004 16.5915584 177.5004 18.975974 183.0994 18.975974 183.0994 21.261039 177.5004 21.261039 177.5004 23.7448052 184.0004 23.7448052 184.0004 26.0298701 174.9004 26.0298701"></polygon>
+        <path d="M191.2998,21.261039 L191.2998,14.4058442 L192.5998,14.4058442 L192.5998,21.1616883 C192.5998,23.7448052 193.9998,25.1357143 196.1998,25.1357143 C198.4008,25.1357143 199.7998,23.8441558 199.7998,21.261039 L199.7998,14.4058442 L201.0998,14.4058442 L201.0998,21.1616883 C201.0998,24.638961 199.0998,26.4272727 196.0998,26.4272727 C193.2998,26.3279221 191.2998,24.5396104 191.2998,21.261039" fill="currentColor"></path>
+        <polygon fill="currentColor" points="204.2998 14.3064935 205.5998 14.3064935 213.0998 23.7448052 213.0998 14.3064935 214.4008 14.3064935 214.4008 26.1292208 213.2998 26.1292208 205.5998 16.3928571 205.5998 26.1292208 204.2998 26.1292208"></polygon>
+        <polygon fill="currentColor" points="217.7 26.1292208 219 26.1292208 219 14.3064935 217.7 14.3064935"></polygon>
+        <polygon fill="currentColor" points="221.5 14.3064935 223 14.3064935 227.2 24.4402597 231.4 14.3064935 232.8 14.3064935 227.7 26.2285714 226.5 26.2285714"></polygon>
+        <polygon fill="currentColor" points="235.0996 14.3064935 243.7006 14.3064935 243.7006 15.4987013 236.4006 15.4987013 236.4006 19.5720779 242.9006 19.5720779 242.9006 20.7642857 236.4006 20.7642857 236.4006 24.937013 243.7006 24.937013 243.7006 26.1292208 234.9996 26.1292208 234.9996 14.3064935"></polygon>
+        <path d="M251.5,20.3664857 C253.3,20.3664857 254.6,19.4733234 254.6,17.9830636 C254.6,16.4928039 253.5,15.6970052 251.6,15.6970052 L247.9,15.6970052 L247.9,20.4668299 L251.5,20.4668299 L251.5,20.3664857 Z M246.5,14.3060961 L251.6,14.3060961 C253.1,14.3060961 254.2,14.7034987 255,15.4992974 C255.6,16.0944078 255.9,16.889213 255.9,17.7833688 C255.9,19.7703818 254.5,20.863239 252.7,21.2606416 L256.4,26.1298169 L254.8,26.1298169 L251.4,21.5586935 L248,21.5586935 L248,26.1298169 L246.7,26.1298169 L246.7,14.3060961 L246.5,14.3060961 Z" fill="currentColor"></path>
+        <path d="M257.9004,24.4404584 L258.7004,23.4469519 C259.9004,24.5398091 261.0994,25.135913 262.7994,25.135913 C264.4004,25.135913 265.5004,24.3401143 265.5004,23.1489 C265.5004,22.0560429 264.9004,21.459939 262.4004,20.8628416 C259.7004,20.2677312 258.4004,19.3725818 258.4004,17.485913 C258.4004,15.5982506 260.0004,14.3066922 262.2994,14.3066922 C264.0004,14.3066922 265.2994,14.8034455 266.5004,15.7969519 L265.7004,16.7904584 C264.5994,15.8963026 263.5004,15.4989 262.2994,15.4989 C260.7994,15.4989 259.7994,16.2937052 259.7994,17.3865623 C259.7994,18.4794195 260.4004,19.174874 263.0004,19.6716273 C265.7004,20.2677312 266.9004,21.161887 266.9004,23.0495494 C266.9004,25.0365623 265.2004,26.4274714 262.7994,26.4274714 C260.9004,26.3271273 259.2994,25.7320169 257.9004,24.4404584" fill="currentColor"></path>
+        <polygon fill="currentColor" points="269.6 26.1292208 270.901 26.1292208 270.901 14.3064935 269.6 14.3064935"></polygon>
+        <polygon fill="currentColor" points="277.5 15.5978532 273.5 15.5978532 273.5 14.4056455 282.8 14.4056455 282.8 15.5978532 278.8 15.5978532 278.8 26.2283727 277.4 26.2283727 277.4 15.5978532"></polygon>
+        <polygon fill="currentColor" points="289 21.459939 284.1 14.3066922 285.7 14.3066922 289.7 20.2677312 293.7 14.3066922 295.3 14.3066922 290.4 21.459939 290.4 26.1294195 289 26.1294195"></polygon>
+        <path d="M26.7998,3.17902208 C26.7998,3.17902208 25.0998,6.8549961 24.1998,8.64330779 C19.8998,6.65629481 14.2998,6.45759351 9.5998,9.14006104 C6.4998,11.0277234 3.8998,14.4056455 3.6998,18.0816195 C3.5998,20.4660351 4.6998,23.1494961 4.2998,25.6332623 C4.1998,26.9238273 3.8998,28.2153857 3.2998,29.3082429 C2.4998,30.6007948 1.5998,31.6926584 -0.000200000002,31.7920091 C0.2998,31.3946065 2.7998,30.2023987 1.7998,24.738113 C1.3998,22.5523987 -1.6002,17.1874636 1.2998,10.5309701 C3.9998,4.37122987 15.3998,-2.88136753 26.7998,3.17902208" fill="currentColor"></path>
+        <path d="M13.7002,13.9091903 C15.2002,13.412437 16.8002,13.412437 18.4002,13.710489 C21.4002,14.2072422 23.6002,15.9955539 24.7002,18.6780214 C25.8002,21.4598396 26.6002,23.6455539 28.6002,26.0299695 C28.7002,26.1293201 25.6002,25.5332162 25.6002,25.5332162 C26.4002,20.0689305 21.2002,19.8702292 19.7002,21.8572422 C20.8002,23.04945 22.6002,23.6455539 24.1002,23.4468526 C23.8002,28.9111383 25.3002,33.7793201 25.2002,33.7793201 C24.0002,33.5806188 18.3002,30.3020474 16.6002,28.8117877 C14.2002,29.2091903 12.2002,30.1033461 9.4002,30.5007487 C9.3002,30.5007487 9.9002,28.4143851 9.8002,27.4208786 C9.8002,24.5397097 7.6002,21.8572422 9.2002,18.3799695 C10.1002,16.1942552 11.5002,14.7039955 13.7002,13.9091903" fill="currentColor"></path>
+        <path d="M15.7002,12.2200305 L16.1002,12.2200305 C16.1002,12.0213292 16.3002,10.6304201 17.5002,9.73626429 C18.8002,8.64340714 20.5002,8.74275779 20.5002,8.74275779 C18.8002,8.24600455 17.1002,8.1466539 15.9002,8.34535519 L15.7002,12.2200305 Z" fill="currentColor"></path>
+        <path d="M5,17.187563 C4.7,18.7771734 4.7,20.3667838 4.9,21.161589 C4.9,21.161589 5.1,19.7706799 5.9,18.9758747 C6.6,18.2804201 7.5,18.1810695 7.8,18.1810695 C7.8,18.1810695 8,17.6843162 7.9,17.6843162 L5,17.187563 Z" fill="currentColor"></path>
+        <path d="M8.2002,16.8897097 C8.3002,16.6910084 8.4002,16.4923071 8.5002,16.1942552 L5.5002,15.0020474 C5.3002,15.39945 5.2002,15.8962032 5.1002,16.1942552 L8.2002,16.8897097 Z" fill="currentColor"></path>
+        <path d="M9,15.7967532 L9.5,15.2006494 L6.7,13.1142857 C6.4,13.4123377 6.2,13.8097403 6,14.3064935 L9,15.7967532 Z" fill="currentColor"></path>
+        <path d="M10,14.6043468 L10.6,14.0082429 L8.2,11.3257753 C7.7,11.8225286 7.5,12.0212299 7.2,12.4186325 L10,14.6043468 Z" fill="currentColor"></path>
+        <path d="M11.2002,13.7102903 L11.9002,13.3128877 L10.1002,10.1336669 C9.5002,10.4317188 9.0002,10.7297708 8.8002,10.9284721 L11.2002,13.7102903 Z" fill="currentColor"></path>
+        <path d="M12.5,13.0151338 L13.3,12.7170818 L12.3,9.14045844 C11.7,9.33915974 11,9.63721169 10.8,9.73656234 L12.5,13.0151338 Z" fill="currentColor"></path>
+        <path d="M14,12.5183805 L14.8,12.3196792 L14.9,8.4450039 C14.9,8.4450039 14,8.64370519 13.2,8.84240649 L14,12.5183805 Z" fill="currentColor"></path>
+        <polygon fill="currentColor" points="36 14.3064935 38.8 14.3064935 41.9 19.274026 45 14.3064935 47.8 14.3064935 47.8 26.1292208 45.2 26.1292208 45.2 18.3798701 42 23.4467532 41.9 23.4467532 38.6 18.4792208 38.6 26.1292208 36 26.1292208"></polygon>
+        <polygon fill="currentColor" points="50.8 26.1292208 53.4 26.1292208 53.4 14.3064935 50.8 14.3064935"></polygon>
+    </g>
           </svg>
-          <span class="font-bold tracking-wider text-sm sm:text-base uppercase text-white font-sans">Michigan State University</span>
-        </div>
+        </a>
         <address class="not-italic text-xs sm:text-sm text-slate-300 space-y-1">
           <p class="font-semibold text-white">Center for Genomic Intelligence & Machine Learning</p>
           <p>Biomedical & Physical Sciences Building</p>

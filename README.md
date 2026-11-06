@@ -97,6 +97,15 @@ Every exemplar page is a complete, self-contained HTML file styled with MSU desi
 
 Colors conform to the official guidelines established by [MSU Communications and Marketing](https://comms.msu.edu/resources) and the [MSU Digital Experience Studio](https://dxstudio.msu.edu/website-technology/web-standards).
 
+### Official MSU Wordmark Lockup (Adaptive Color)
+All page headers and footers incorporate the official MSU vector lockup (Spartan helmet + "MICHIGAN STATE UNIVERSITY" wordmark, as used on `ai.msu.edu`):
+* **Adaptive `currentColor` Rendering**: Inlined SVG elements use `fill="currentColor"`. This means setting `class="text-white fill-current"` on dark green backgrounds renders the lockup in crisp white, while setting `class="text-msu-green fill-current"` renders the lockup in official Spartan Green (`#18453B`) on light backgrounds.
+* **Standalone Assets**:
+  * [`dist/img/msu-wordmark.svg`](file:///Users/billspat/Downloads/msu_css_template/dist/img/msu-wordmark.svg): Adaptive `currentColor` version.
+  * [`dist/img/msu-wordmark-white.svg`](file:///Users/billspat/Downloads/msu_css_template/dist/img/msu-wordmark-white.svg): Pre-filled white version for dark headers and cards.
+  * [`dist/img/msu-wordmark-green.svg`](file:///Users/billspat/Downloads/msu_css_template/dist/img/msu-wordmark-green.svg): Pre-filled Spartan green version for white/light layouts.
+* **Header Height & Scaling**: Top masthead containers are calibrated with `min-h-[52px]` and vertical padding `py-2.5 sm:py-3` so the `296x34` vector scales seamlessly from `h-6` on mobile devices up to `h-8.5` on desktop screens without clipping.
+
 ### Primary Color Tokens
 * **Spartan Green (`#18453B`)**: Official primary brand color (Pantone 567 C). Used for mastheads, primary buttons (`btn-primary`), and prominent links.
 * **MSU Forest Green (`#0F2D26`)**: Deep contrast green. Used for headers, footers, and high-contrast text accents.
@@ -113,13 +122,18 @@ Colors conform to the official guidelines established by [MSU Communications and
 ## Header Layouts: 2-Tier vs. 1-Tier
 
 ### 1. Two-Tier Header (Institutional Standard)
-Used on [`lab-home.html`](file:///Users/billspat/Downloads/msu_css_template/lab-home.html), [`team.html`](file:///Users/billspat/Downloads/msu_css_template/team.html), [`publications.html`](file:///Users/billspat/Downloads/msu_css_template/publications.html), etc.
-* **Tier 1 (Masthead)**: Spartan Green bar with official Spartan helmet SVG, "MICHIGAN STATE UNIVERSITY" link to `msu.edu`, and institutional links.
-* **Tier 2 (Unit Identity Bar)**: White bar displaying college/department hierarchy (e.g. *College of Natural Science / Dept. of CMSE*), site title, and responsive navigation links.
+Used on [`index.html`](file:///Users/billspat/Downloads/msu_css_template/index.html), [`lab-home.html`](file:///Users/billspat/Downloads/msu_css_template/lab-home.html), [`team.html`](file:///Users/billspat/Downloads/msu_css_template/team.html), [`publications.html`](file:///Users/billspat/Downloads/msu_css_template/publications.html), etc.
+* **Tier 1 (MSU Masthead)**: Spartan Green (`#18453B`) banner spanning full width.
+  * **Left-Aligned Logo**: The official MSU Spartan Helmet + Wordmark SVG is strictly anchored to the left grid margin, matching [`ai.msu.edu`](https://ai.msu.edu) and [`brand.msu.edu`](https://brand.msu.edu).
+  * **Right Tools**: Quick institutional links and "Search MSU" utility.
+* **Tier 2 (Unit Identity Bar & Responsive Navigation)**:
+  * **Desktop (≥ md)**: Displays department hierarchy, site title, and a clean horizontal navigation bar.
+  * **Mobile / Narrow (< md)**: The horizontal menu collapses into an accessible **Hamburger Menu Button** (with 3-bar icon and "MENU" label). Toggling the button smoothly expands a stacked DaisyUI menu panel (`<ul class="menu bg-slate-50 ...">`).
 
 ### 2. One-Tier Header (Compact Faculty & Project Variant)
 Demonstrated on [`faculty-profile.html`](file:///Users/billspat/Downloads/msu_css_template/faculty-profile.html).
-* Combines the Spartan helmet, MSU brand mark, faculty/project title, and navigation into a **single space-efficient sticky green bar** (`#18453B`).
+* Combines the left-aligned Spartan helmet, MSU wordmark, faculty name, and navigation into a **single space-efficient sticky green bar** (`#18453B`).
+* On mobile, displays the left-aligned logo and faculty title with a compact hamburger button on the right that opens the DaisyUI mobile navigation dropdown.
 * Perfect for personal faculty sites, postdoc portfolios, small grants, or documentation sub-sites where vertical screen real estate is critical.
 
 ---
