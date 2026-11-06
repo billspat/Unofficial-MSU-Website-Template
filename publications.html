@@ -1,0 +1,421 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="msu">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Publications & Preprints | Center for Genomic Intelligence | Michigan State University</title>
+  <meta name="description" content="Peer-reviewed publications, preprints, DOI links, and BibTeX citations from the Center for Genomic Intelligence & Machine Learning at MSU.">
+  <link rel="stylesheet" href="dist/css/msu-theme.css">
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased flex flex-col min-h-screen">
+
+  <!-- ========================================================================= -->
+  <!-- ACCESSIBILITY: Skip to main content landmark (WCAG 2.1 AA)               -->
+  <!-- ========================================================================= -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- ========================================================================= -->
+  <!-- HEADER: Tier 1 - MSU Institutional Masthead                               -->
+  <!-- ========================================================================= -->
+  <header role="banner" class="w-full">
+    <div class="msu-masthead px-4 sm:px-8 py-2.5">
+      <div class="max-w-7xl mx-auto flex items-center justify-between">
+        <a href="https://msu.edu" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2.5 text-white hover:text-emerald-200 transition-colors py-1 group" aria-label="Michigan State University Homepage (opens in new tab)">
+          <svg class="h-6 w-6 text-white group-hover:scale-105 transition-transform shrink-0" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M12 2C6.48 2 2 6.48 2 12c0 3.2 1.5 6.06 3.84 7.9L5 22h4l.84-2.52C10.53 19.82 11.25 20 12 20s1.47-.18 2.16-.52L15 22h4l-.84-2.1C20.5 18.06 22 15.2 22 12c0-5.52-4.48-10-10-10zm0 3c3.87 0 7 3.13 7 7 0 1.9-.76 3.63-2 4.9V13h-2v3.13c-.92.54-1.92.87-3 .87s-2.08-.33-3-.87V13H7v3.9c-1.24-1.27-2-3-2-4.9 0-3.87 3.13-7 7-7z"/>
+          </svg>
+          <span class="font-extrabold tracking-wider text-xs sm:text-sm uppercase font-sans">Michigan State University</span>
+        </a>
+
+        <div class="flex items-center gap-4 text-xs text-emerald-100">
+          <a href="index.html" class="hidden sm:inline-block font-semibold hover:text-white">&larr; Template Index</a>
+          <a href="https://research.msu.edu" target="_blank" rel="noopener noreferrer" class="hover:text-white">MSU Research</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- ========================================================================= -->
+    <!-- HEADER: Tier 2 - Unit Identity & Accessible Navigation                     -->
+    <!-- ========================================================================= -->
+    <div class="msu-unit-bar">
+      <div class="max-w-7xl mx-auto px-4 sm:px-8 py-4">
+        <div class="flex items-center justify-between">
+          <div>
+            <div class="text-xs uppercase tracking-wider text-emerald-800 font-semibold mb-1">
+              <span>College of Natural Science</span>
+              <span class="mx-1 text-slate-300" aria-hidden="true">/</span>
+              <span>Center for Genomic Intelligence &amp; Machine Learning</span>
+            </div>
+            <a href="lab-home.html" class="text-xl sm:text-2xl font-extrabold text-msu-dark hover:text-msu-green transition-colors">
+              Publications &amp; Citations
+            </a>
+          </div>
+
+          <button 
+            type="button" 
+            class="md:hidden btn btn-ghost btn-square text-msu-dark" 
+            data-toggle-nav="true" 
+            aria-controls="pub-nav-menu" 
+            aria-expanded="false" 
+            aria-label="Toggle navigation menu"
+          >
+            <svg class="h-6 w-6 nav-icon-open" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
+            <svg class="h-6 w-6 nav-icon-close hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+            </svg>
+          </button>
+        </div>
+
+        <nav id="pub-nav-menu" aria-label="Publications Site Navigation" class="hidden md:block mt-4 pt-3 border-t border-slate-200">
+          <ul class="flex flex-col md:flex-row md:items-center gap-1 sm:gap-2 text-sm font-semibold text-slate-700">
+            <li><a href="lab-home.html" class="block px-3 py-2 rounded-md hover:bg-slate-100 hover:text-msu-green transition-colors">Home</a></li>
+            <li><a href="project-detail.html" class="block px-3 py-2 rounded-md hover:bg-slate-100 hover:text-msu-green transition-colors">Research Projects</a></li>
+            <li><a href="publications.html" class="block px-3 py-2 rounded-md bg-emerald-50 text-msu-green border-b-2 border-msu-green" aria-current="page">Publications</a></li>
+            <li><a href="team.html" class="block px-3 py-2 rounded-md hover:bg-slate-100 hover:text-msu-green transition-colors">Team</a></li>
+            <li><a href="faculty-profile.html" class="block px-3 py-2 rounded-md hover:bg-slate-100 hover:text-msu-green transition-colors">Principal Investigator</a></li>
+            <li><a href="content-page.html" class="block px-3 py-2 rounded-md hover:bg-slate-100 hover:text-msu-green transition-colors">Resources &amp; Software</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <!-- ========================================================================= -->
+  <!-- MAIN CONTENT REGION                                                       -->
+  <!-- ========================================================================= -->
+  <main id="main-content" role="main" class="flex-grow py-10 px-4 sm:px-8">
+    <div class="max-w-7xl mx-auto space-y-10">
+      
+      <!-- BREADCRUMB NAVIGATION -->
+      <nav aria-label="Breadcrumb" class="text-xs text-slate-500">
+        <ol class="flex items-center gap-2">
+          <li><a href="lab-home.html" class="hover:text-msu-green underline">Lab Home</a></li>
+          <li aria-hidden="true">&rsaquo;</li>
+          <li class="font-bold text-slate-800" aria-current="page">Publications</li>
+        </ol>
+      </nav>
+
+      <!-- INTRO TITLE & RESEARCH REPOSITORIES -->
+      <div class="flex flex-col md:flex-row md:items-end justify-between gap-4 border-b border-slate-200 pb-6">
+        <div>
+          <h1 class="text-3xl sm:text-4xl font-extrabold text-msu-dark">Publications Archive</h1>
+          <p class="text-base text-slate-600 mt-2 max-w-2xl">
+            A comprehensive record of peer-reviewed journal articles, conference proceedings, preprints, and dataset releases from our group.
+          </p>
+        </div>
+
+        <div class="flex items-center gap-3">
+          <a href="https://scholar.google.com" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm border-slate-300 text-slate-700 hover:bg-slate-100">
+            Google Scholar
+          </a>
+          <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="btn btn-outline btn-sm border-slate-300 text-slate-700 hover:bg-slate-100">
+            Open Code / GitHub
+          </a>
+        </div>
+      </div>
+
+      <!-- ACCESSIBLE TOPIC FILTERS -->
+      <section aria-label="Filter Publications">
+        <div class="flex items-center gap-2 flex-wrap" role="group" aria-label="Filter publications by research category">
+          <span class="text-xs font-bold uppercase tracking-wider text-slate-500 mr-2">Filter By:</span>
+          
+          <button 
+            type="button" 
+            class="btn btn-sm btn-primary bg-msu-green text-white font-semibold" 
+            data-pub-filter="all" 
+            aria-pressed="true"
+          >
+            All Papers
+          </button>
+          
+          <button 
+            type="button" 
+            class="btn btn-sm btn-outline border-slate-300 text-slate-700 hover:bg-slate-100 font-semibold" 
+            data-pub-filter="genomics" 
+            aria-pressed="false"
+          >
+            Genomics &amp; Regulation
+          </button>
+          
+          <button 
+            type="button" 
+            class="btn btn-sm btn-outline border-slate-300 text-slate-700 hover:bg-slate-100 font-semibold" 
+            data-pub-filter="ml" 
+            aria-pressed="false"
+          >
+            Machine Learning &amp; AI
+          </button>
+          
+          <button 
+            type="button" 
+            class="btn btn-sm btn-outline border-slate-300 text-slate-700 hover:bg-slate-100 font-semibold" 
+            data-pub-filter="structural" 
+            aria-pressed="false"
+          >
+            Structural Biology
+          </button>
+        </div>
+      </section>
+
+      <!-- PUBLICATION LIST -->
+      <section aria-label="List of Publications" class="space-y-6">
+        
+        <!-- PUB 1 -->
+        <article class="card bg-white border border-slate-200 shadow-sm p-6 sm:p-7 hover:border-msu-green transition-all" data-pub-item="true" data-pub-category="genomics ml">
+          <div class="flex flex-col gap-3">
+            
+            <div class="flex flex-wrap items-center gap-2">
+              <span class="badge badge-sm bg-emerald-100 text-msu-dark font-bold">2026</span>
+              <span class="badge badge-sm bg-slate-100 text-slate-800 font-semibold">Nature Biotechnology</span>
+              <span class="badge badge-sm badge-outline text-xs text-slate-600">Article</span>
+            </div>
+
+            <h2 class="text-xl font-bold text-msu-dark">
+              Geometric Graph Transformers for Deciphering Enhancer-Promoter Interactivity
+            </h2>
+
+            <p class="text-sm text-slate-700">
+              <strong>Jenkins, S.</strong>, Zhao, Y., Brooks, D., &amp; Miller, R.
+            </p>
+
+            <p class="text-xs text-slate-500 font-mono">
+              <em>Nature Biotechnology</em> 44, 301–315 (2026). DOI: 10.1038/s41587-026-00123-x
+            </p>
+
+            <!-- Abstract Accordion -->
+            <details class="collapse bg-slate-50 border border-slate-200 rounded-lg text-sm mt-1">
+              <summary class="collapse-title font-semibold text-xs text-slate-700 cursor-pointer hover:text-msu-green py-2 px-4 min-h-0">
+                View Abstract &amp; Key Findings
+              </summary>
+              <div class="collapse-content text-xs text-slate-600 leading-relaxed px-4 pb-4">
+                Non-coding mutations account for over 90% of disease-associated variants identified by genome-wide association studies, yet their functional targets remain ambiguous. We introduce GeoLoop, an SE(3)-equivariant graph transformer that maps three-dimensional chromatin folds and spatial contact loops directly from mammalian DNA sequence, outperforming previous convolutional baselines by 28% in identifying causal regulatory hubs in cardiac cell lineages.
+              </div>
+            </details>
+
+            <!-- Action buttons -->
+            <div class="flex flex-wrap items-center gap-2 mt-2 pt-3 border-t border-slate-100">
+              <a href="https://doi.org" target="_blank" rel="noopener noreferrer" class="btn btn-xs btn-outline border-slate-300 text-slate-700 hover:bg-slate-100">
+                DOI: 10.1038/s41587-026-00123-x
+              </a>
+              <a href="#" class="btn btn-xs btn-outline border-slate-300 text-slate-700 hover:bg-slate-100">
+                <svg class="w-3.5 h-3.5 mr-1 text-red-600" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path d="M4 4a2 2 0 012-2h4.586A2 2 0 0112 2.586L15.414 6A2 2 0 0116 7.414V16a2 2 0 01-2 2H6a2 2 0 01-2-2V4z"/></svg>
+                PDF (1.8 MB)
+              </a>
+              <button 
+                type="button" 
+                class="btn btn-xs btn-outline border-slate-300 text-slate-700 hover:bg-slate-100"
+                data-open-modal="bibtex-modal"
+              >
+                Cite / BibTeX
+              </button>
+              <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="btn btn-xs btn-outline border-slate-300 text-slate-700 hover:bg-slate-100">
+                Code Repository
+              </a>
+            </div>
+
+          </div>
+        </article>
+
+        <!-- PUB 2 -->
+        <article class="card bg-white border border-slate-200 shadow-sm p-6 sm:p-7 hover:border-msu-green transition-all" data-pub-item="true" data-pub-category="genomics">
+          <div class="flex flex-col gap-3">
+            
+            <div class="flex flex-wrap items-center gap-2">
+              <span class="badge badge-sm bg-emerald-100 text-msu-dark font-bold">2025</span>
+              <span class="badge badge-sm bg-slate-100 text-slate-800 font-semibold">Cell Genomics</span>
+              <span class="badge badge-sm badge-outline text-xs text-slate-600">Open Access</span>
+            </div>
+
+            <h2 class="text-xl font-bold text-msu-dark">
+              Sequence-to-Expression Modeling Identifies Pathogenic Non-Coding Variants in Congenital Heart Disease
+            </h2>
+
+            <p class="text-sm text-slate-700">
+              Kaufman, L., Patel, A., Sharma, P., &amp; <strong>Jenkins, S.</strong>
+            </p>
+
+            <p class="text-xs text-slate-500 font-mono">
+              <em>Cell Genomics</em> 5(8), 100452 (2025). DOI: 10.1016/j.xgen.2025.100452
+            </p>
+
+            <details class="collapse bg-slate-50 border border-slate-200 rounded-lg text-sm mt-1">
+              <summary class="collapse-title font-semibold text-xs text-slate-700 cursor-pointer hover:text-msu-green py-2 px-4 min-h-0">
+                View Abstract &amp; Key Findings
+              </summary>
+              <div class="collapse-content text-xs text-slate-600 leading-relaxed px-4 pb-4">
+                We present a targeted saturation mutagenesis screen evaluated against deep sequence-to-expression models in human embryonic stem cell-derived cardiomyocytes. The architecture pinpointed 14 de novo non-coding mutations disrupting cardiac transcription factor NKX2-5 binding, validated via CRISPR-Cas9 base editing.
+              </div>
+            </details>
+
+            <div class="flex flex-wrap items-center gap-2 mt-2 pt-3 border-t border-slate-100">
+              <a href="https://doi.org" target="_blank" rel="noopener noreferrer" class="btn btn-xs btn-outline border-slate-300 text-slate-700 hover:bg-slate-100">
+                DOI: 10.1016/j.xgen.2025.100452
+              </a>
+              <a href="#" class="btn btn-xs btn-outline border-slate-300 text-slate-700 hover:bg-slate-100">
+                <svg class="w-3.5 h-3.5 mr-1 text-red-600" fill="currentColor" viewBox="0 0 20 20" aria-hidden="true"><path d="M4 4a2 2 0 012-2h4.586A2 2 0 0112 2.586L15.414 6A2 2 0 0116 7.414V16a2 2 0 01-2 2H6a2 2 0 01-2-2V4z"/></svg>
+                PDF (2.4 MB)
+              </a>
+              <button 
+                type="button" 
+                class="btn btn-xs btn-outline border-slate-300 text-slate-700 hover:bg-slate-100"
+                data-open-modal="bibtex-modal"
+              >
+                Cite / BibTeX
+              </button>
+            </div>
+
+          </div>
+        </article>
+
+        <!-- PUB 3 -->
+        <article class="card bg-white border border-slate-200 shadow-sm p-6 sm:p-7 hover:border-msu-green transition-all" data-pub-item="true" data-pub-category="structural ml">
+          <div class="flex flex-col gap-3">
+            
+            <div class="flex flex-wrap items-center gap-2">
+              <span class="badge badge-sm bg-emerald-100 text-msu-dark font-bold">2025</span>
+              <span class="badge badge-sm bg-slate-100 text-slate-800 font-semibold">NeurIPS 2025</span>
+              <span class="badge badge-sm badge-outline text-xs text-slate-600">Spotlight</span>
+            </div>
+
+            <h2 class="text-xl font-bold text-msu-dark">
+              Diffusion Models on Riemannian Manifolds for Macromolecular Assembly Conformations
+            </h2>
+
+            <p class="text-sm text-slate-700">
+              Sharma, P., Zhao, Y., &amp; <strong>Jenkins, S.</strong>
+            </p>
+
+            <p class="text-xs text-slate-500 font-mono">
+              <em>Advances in Neural Information Processing Systems (NeurIPS)</em> 38, 14220–14234 (2025).
+            </p>
+
+            <details class="collapse bg-slate-50 border border-slate-200 rounded-lg text-sm mt-1">
+              <summary class="collapse-title font-semibold text-xs text-slate-700 cursor-pointer hover:text-msu-green py-2 px-4 min-h-0">
+                View Abstract &amp; Key Findings
+              </summary>
+              <div class="collapse-content text-xs text-slate-600 leading-relaxed px-4 pb-4">
+                Simulating large macromolecular transitions requires capturing continuous spatial rotations and translations. We develop a score-based generative model defined directly over SO(3) x R3 manifolds, achieving accurate thermal fluctuations in protein-protein complexes without costly all-atom molecular dynamics.
+              </div>
+            </details>
+
+            <div class="flex flex-wrap items-center gap-2 mt-2 pt-3 border-t border-slate-100">
+              <a href="#" class="btn btn-xs btn-outline border-slate-300 text-slate-700 hover:bg-slate-100">
+                arXiv:2506.08942
+              </a>
+              <button 
+                type="button" 
+                class="btn btn-xs btn-outline border-slate-300 text-slate-700 hover:bg-slate-100"
+                data-open-modal="bibtex-modal"
+              >
+                Cite / BibTeX
+              </button>
+              <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="btn btn-xs btn-outline border-slate-300 text-slate-700 hover:bg-slate-100">
+                Code &amp; Checkpoints
+              </a>
+            </div>
+
+          </div>
+        </article>
+
+      </section>
+
+    </div>
+  </main>
+
+  <!-- ========================================================================= -->
+  <!-- ACCESSIBLE MODAL: BibTeX Citation Dialog (WCAG 2.1 AA)                     -->
+  <!-- ========================================================================= -->
+  <dialog id="bibtex-modal" class="modal p-4 rounded-xl shadow-2xl backdrop:bg-slate-900/60 max-w-xl w-full border border-slate-300" role="dialog" aria-labelledby="bibtex-dialog-title" aria-modal="true">
+    <div class="modal-box p-6 bg-white max-w-none">
+      <div class="flex items-center justify-between pb-3 border-b border-slate-200 mb-4">
+        <h2 id="bibtex-dialog-title" class="text-lg font-bold text-msu-dark">BibTeX Citation</h2>
+        <button type="button" class="btn btn-sm btn-circle btn-ghost text-slate-500 hover:text-slate-800" data-close-modal="true" aria-label="Close dialog">
+          ✕
+        </button>
+      </div>
+
+      <p class="text-xs text-slate-600 mb-3">Copy and paste this entry directly into your LaTeX bibliography file:</p>
+
+      <textarea id="bibtex-content" class="w-full h-44 p-3 bg-slate-900 text-emerald-400 font-mono text-xs rounded-lg border border-slate-700 resize-none focus:outline-none" readonly aria-label="BibTeX citation text">
+@article{jenkins2026geometric,
+  title={Geometric Graph Transformers for Deciphering Enhancer-Promoter Interactivity},
+  author={Jenkins, Sarah and Zhao, Yan and Brooks, Devin and Miller, Robert},
+  journal={Nature Biotechnology},
+  volume={44},
+  number={3},
+  pages={301--315},
+  year={2026},
+  publisher={Nature Publishing Group},
+  doi={10.1038/s41587-026-00123-x}
+}</textarea>
+
+      <div class="modal-action mt-4 flex items-center justify-between">
+        <button 
+          type="button" 
+          class="btn btn-primary bg-msu-green hover:bg-msu-dark text-white font-semibold btn-sm"
+          data-copy-target="bibtex-content"
+        >
+          <svg class="w-4 h-4 mr-1 inline" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 5H6a2 2 0 00-2 2v12a2 2 0 002 2h10a2 2 0 002-2v-1M8 5a2 2 0 002 2h2a2 2 0 002-2M8 5a2 2 0 012-2h2a2 2 0 012 2m0 0h2a2 2 0 012 2v3m2 4H10m0 0l3-3m-3 3l3 3"></path></svg>
+          Copy BibTeX
+        </button>
+        <button type="button" class="btn btn-ghost btn-sm text-slate-600" data-close-modal="true">
+          Close
+        </button>
+      </div>
+    </div>
+  </dialog>
+
+  <!-- ========================================================================= -->
+  <!-- FOOTER: Institutional MSU Footer                                          -->
+  <!-- ========================================================================= -->
+  <footer role="contentinfo" class="msu-footer pt-12 pb-8 px-4 sm:px-8 mt-auto">
+    <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 pb-8 border-b border-emerald-900/60">
+      <div>
+        <div class="flex items-center gap-2.5 mb-4">
+          <svg class="h-8 w-8 text-white shrink-0" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M12 2C6.48 2 2 6.48 2 12c0 3.2 1.5 6.06 3.84 7.9L5 22h4l.84-2.52C10.53 19.82 11.25 20 12 20s1.47-.18 2.16-.52L15 22h4l-.84-2.1C20.5 18.06 22 15.2 22 12c0-5.52-4.48-10-10-10zm0 3c3.87 0 7 3.13 7 7 0 1.9-.76 3.63-2 4.9V13h-2v3.13c-.92.54-1.92.87-3 .87s-2.08-.33-3-.87V13H7v3.9c-1.24-1.27-2-3-2-4.9 0-3.87 3.13-7 7-7z"/>
+          </svg>
+          <span class="font-bold tracking-wider text-sm sm:text-base uppercase text-white font-sans">Michigan State University</span>
+        </div>
+        <address class="not-italic text-xs sm:text-sm text-slate-300 space-y-1">
+          <p class="font-semibold text-white">Center for Genomic Intelligence &amp; Machine Learning</p>
+          <p>Biomedical &amp; Physical Sciences, Rm 4200</p>
+          <p>East Lansing, MI 48824</p>
+          <p class="pt-2"><a href="mailto:genomics-lab@msu.edu" class="text-emerald-300 hover:text-white underline">genomics-lab@msu.edu</a></p>
+        </address>
+      </div>
+
+      <div>
+        <h3 class="text-sm font-bold uppercase tracking-wider text-white mb-3 font-sans">Site Links</h3>
+        <ul class="text-xs sm:text-sm space-y-2 text-slate-300">
+          <li><a href="lab-home.html" class="hover:text-emerald-300 underline-offset-4 hover:underline">Lab Research Home</a></li>
+          <li><a href="faculty-profile.html" class="hover:text-emerald-300 underline-offset-4 hover:underline">Principal Investigator</a></li>
+          <li><a href="team.html" class="hover:text-emerald-300 underline-offset-4 hover:underline">Team &amp; Personnel</a></li>
+          <li><a href="project-detail.html" class="hover:text-emerald-300 underline-offset-4 hover:underline">Research Projects</a></li>
+          <li><a href="index.html" class="hover:text-emerald-300 underline-offset-4 hover:underline">&larr; Return to Template Hub</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h3 class="text-sm font-bold uppercase tracking-wider text-white mb-3 font-sans">Institutional Links</h3>
+        <ul class="text-xs sm:text-sm space-y-2 text-slate-300">
+          <li><span>Call MSU: </span><a href="tel:5173551851" class="text-white font-bold hover:text-emerald-300">(517) 355-1851</a></li>
+          <li><a href="https://msu.edu" target="_blank" rel="noopener noreferrer" class="hover:text-emerald-300 underline-offset-4 hover:underline">Visit msu.edu</a></li>
+          <li><a href="https://civilrights.msu.edu/policies/notice-of-non-discrimination.html" target="_blank" rel="noopener noreferrer" class="hover:text-emerald-300 underline-offset-4 hover:underline">Notice of Non-Discrimination</a></li>
+          <li><a href="https://msu.edu/privacy" target="_blank" rel="noopener noreferrer" class="hover:text-emerald-300 underline-offset-4 hover:underline">Privacy Statement</a></li>
+          <li><a href="https://webaccess.msu.edu" target="_blank" rel="noopener noreferrer" class="hover:text-emerald-300 underline-offset-4 hover:underline">Web Accessibility / Accessible MSU</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="max-w-7xl mx-auto pt-6 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-400 gap-3">
+      <p>&copy; Michigan State University. Publications Archive.</p>
+      <p class="text-slate-400">WCAG 2.1 Level AA Compliant • DaisyUI + Tailwind CSS</p>
+    </div>
+  </footer>
+
+  <script src="dist/js/msu-template.js"></script>
+</body>
+</html>

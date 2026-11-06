@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="msu">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Deep Regulome Initiative | Project Detail | Michigan State University</title>
+  <meta name="description" content="NIH-funded research project developing foundation models for non-coding variant pathology at Michigan State University.">
+  <link rel="stylesheet" href="dist/css/msu-theme.css">
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased flex flex-col min-h-screen">
+
+  <!-- ========================================================================= -->
+  <!-- ACCESSIBILITY: Skip to main content landmark (WCAG 2.1 AA)               -->
+  <!-- ========================================================================= -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- ========================================================================= -->
+  <!-- HEADER: Tier 1 - MSU Institutional Masthead                               -->
+  <!-- ========================================================================= -->
+  <header role="banner" class="w-full">
+    <div class="msu-masthead px-4 sm:px-8 py-2.5">
+      <div class="max-w-7xl mx-auto flex items-center justify-between">
+        <a href="https://msu.edu" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2.5 text-white hover:text-emerald-200 transition-colors py-1 group" aria-label="Michigan State University Homepage (opens in new tab)">
+          <svg class="h-6 w-6 text-white group-hover:scale-105 transition-transform shrink-0" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M12 2C6.48 2 2 6.48 2 12c0 3.2 1.5 6.06 3.84 7.9L5 22h4l.84-2.52C10.53 19.82 11.25 20 12 20s1.47-.18 2.16-.52L15 22h4l-.84-2.1C20.5 18.06 22 15.2 22 12c0-5.52-4.48-10-10-10zm0 3c3.87 0 7 3.13 7 7 0 1.9-.76 3.63-2 4.9V13h-2v3.13c-.92.54-1.92.87-3 .87s-2.08-.33-3-.87V13H7v3.9c-1.24-1.27-2-3-2-4.9 0-3.87 3.13-7 7-7z"/>
+          </svg>
+          <span class="font-extrabold tracking-wider text-xs sm:text-sm uppercase font-sans">Michigan State University</span>
+        </a>
+
+        <div class="flex items-center gap-4 text-xs text-emerald-100">
+          <a href="index.html" class="hidden sm:inline-block font-semibold hover:text-white">&larr; Template Index</a>
+          <a href="https://research.msu.edu" target="_blank" rel="noopener noreferrer" class="hover:text-white">MSU Research</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- ========================================================================= -->
+    <!-- HEADER: Tier 2 - Unit Identity & Accessible Navigation                     -->
+    <!-- ========================================================================= -->
+    <div class="msu-unit-bar">
+      <div class="max-w-7xl mx-auto px-4 sm:px-8 py-4">
+        <div class="flex items-center justify-between">
+          <div>
+            <div class="text-xs uppercase tracking-wider text-emerald-800 font-semibold mb-1">
+              <span>College of Natural Science</span>
+              <span class="mx-1 text-slate-300" aria-hidden="true">/</span>
+              <span>Center for Genomic Intelligence &amp; Machine Learning</span>
+            </div>
+            <a href="lab-home.html" class="text-xl sm:text-2xl font-extrabold text-msu-dark hover:text-msu-green transition-colors">
+              Research Project Overview
+            </a>
+          </div>
+
+          <button 
+            type="button" 
+            class="md:hidden btn btn-ghost btn-square text-msu-dark" 
+            data-toggle-nav="true" 
+            aria-controls="proj-nav-menu" 
+            aria-expanded="false" 
+            aria-label="Toggle navigation menu"
+          >
+            <svg class="h-6 w-6 nav-icon-open" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
+            <svg class="h-6 w-6 nav-icon-close hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+            </svg>
+          </button>
+        </div>
+
+        <nav id="proj-nav-menu" aria-label="Project Site Navigation" class="hidden md:block mt-4 pt-3 border-t border-slate-200">
+          <ul class="flex flex-col md:flex-row md:items-center gap-1 sm:gap-2 text-sm font-semibold text-slate-700">
+            <li><a href="lab-home.html" class="block px-3 py-2 rounded-md hover:bg-slate-100 hover:text-msu-green transition-colors">Home</a></li>
+            <li><a href="project-detail.html" class="block px-3 py-2 rounded-md bg-emerald-50 text-msu-green border-b-2 border-msu-green" aria-current="page">Research Projects</a></li>
+            <li><a href="publications.html" class="block px-3 py-2 rounded-md hover:bg-slate-100 hover:text-msu-green transition-colors">Publications</a></li>
+            <li><a href="team.html" class="block px-3 py-2 rounded-md hover:bg-slate-100 hover:text-msu-green transition-colors">Team</a></li>
+            <li><a href="faculty-profile.html" class="block px-3 py-2 rounded-md hover:bg-slate-100 hover:text-msu-green transition-colors">Principal Investigator</a></li>
+            <li><a href="content-page.html" class="block px-3 py-2 rounded-md hover:bg-slate-100 hover:text-msu-green transition-colors">Resources &amp; Software</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <!-- ========================================================================= -->
+  <!-- MAIN CONTENT REGION                                                       -->
+  <!-- ========================================================================= -->
+  <main id="main-content" role="main" class="flex-grow py-10 px-4 sm:px-8">
+    <div class="max-w-7xl mx-auto space-y-10">
+      
+      <!-- BREADCRUMB NAVIGATION -->
+      <nav aria-label="Breadcrumb" class="text-xs text-slate-500">
+        <ol class="flex items-center gap-2">
+          <li><a href="lab-home.html" class="hover:text-msu-green underline">Lab Home</a></li>
+          <li aria-hidden="true">&rsaquo;</li>
+          <li><a href="lab-home.html#pillars-heading" class="hover:text-msu-green underline">Research Thrusts</a></li>
+          <li aria-hidden="true">&rsaquo;</li>
+          <li class="font-bold text-slate-800" aria-current="page">The Deep Regulome Initiative</li>
+        </ol>
+      </nav>
+
+      <!-- PROJECT HERO BANNER -->
+      <div class="bg-gradient-to-r from-msu-green to-msu-dark text-white p-8 sm:p-10 rounded-2xl shadow-lg border-b-4 border-emerald-500">
+        <div class="flex flex-wrap items-center gap-2.5 mb-4">
+          <span class="badge bg-emerald-800 text-emerald-200 border-none font-bold text-xs uppercase tracking-wider">NIH R01 HG012890</span>
+          <span class="badge bg-emerald-950 text-white border-emerald-600 text-xs">Active Project (2025–2029)</span>
+          <span class="badge bg-white/20 text-white border-none text-xs">Total Award: $2.14M</span>
+        </div>
+
+        <h1 class="text-2xl sm:text-4xl font-extrabold text-white tracking-tight mb-4 leading-tight">
+          The Deep Regulome Initiative: Foundation Models for Predicting Non-Coding Variant Pathogenicity
+        </h1>
+
+        <p class="text-slate-200 text-base sm:text-lg max-w-3xl leading-relaxed">
+          Developing high-capacity, multi-resolution deep neural networks trained on petabase-scale human sequence datasets to forecast cell-type specific epigenetic perturbation caused by non-coding somatic and germline mutations.
+        </p>
+      </div>
+
+      <!-- MAIN LAYOUT: TWO COLUMNS -->
+      <div class="grid grid-cols-1 lg:grid-cols-12 gap-10">
+        
+        <!-- COLUMN 1: PROJECT CONTENT (8 COLS) -->
+        <article class="lg:col-span-8 space-y-8">
+          
+          <!-- PROJECT OVERVIEW -->
+          <section aria-labelledby="overview-heading" class="bg-white p-8 rounded-xl border border-slate-200 shadow-sm">
+            <h2 id="overview-heading" class="text-2xl font-extrabold text-msu-dark pb-3 border-b border-slate-200 mb-4">
+              Project Overview &amp; Motivation
+            </h2>
+            <div class="msu-prose">
+              <p>
+                Although genome-wide association studies (GWAS) have uncovered tens of thousands of loci associated with human disease, over 93% of these signals reside in non-coding regulatory sequences such as enhancers, promoters, and insulators. Deciphering the causal mechanisms behind these variants has historically been limited by cell-type specificity and experimental throughput.
+              </p>
+              <p>
+                The <strong>Deep Regulome Initiative</strong> establishes an end-to-end computational framework capable of predicting changes in chromatin accessibility (ATAC-seq), transcription factor occupancy (ChIP-seq), and gene expression (RNA-seq) at single-nucleotide resolution across more than 200 human tissues and cell lineages.
+              </p>
+            </div>
+          </section>
+
+          <!-- SPECIFIC RESEARCH AIMS -->
+          <section aria-labelledby="aims-heading" class="bg-white p-8 rounded-xl border border-slate-200 shadow-sm">
+            <h2 id="aims-heading" class="text-2xl font-extrabold text-msu-dark pb-3 border-b border-slate-200 mb-6">
+              Specific Research Aims
+            </h2>
+            
+            <div class="space-y-6">
+              <div class="p-5 rounded-lg bg-slate-50 border-l-4 border-msu-green border border-slate-200">
+                <div class="flex items-center justify-between mb-2">
+                  <h3 class="font-bold text-msu-dark text-lg">Aim 1: Multi-Scale Sequence Pretraining</h3>
+                  <span class="badge badge-sm bg-emerald-100 text-msu-dark font-bold">Years 1–2</span>
+                </div>
+                <p class="text-sm text-slate-600 leading-relaxed">
+                  Train a 1.2-billion parameter autoregressive and masked-language foundation model over all high-quality vertebrate reference genomes using Spartan HPC computing clusters.
+                </p>
+              </div>
+
+              <div class="p-5 rounded-lg bg-slate-50 border-l-4 border-msu-green border border-slate-200">
+                <div class="flex items-center justify-between mb-2">
+                  <h3 class="font-bold text-msu-dark text-lg">Aim 2: Epigenetic Transfer &amp; Saturation Mutagenesis</h3>
+                  <span class="badge badge-sm bg-emerald-100 text-msu-dark font-bold">Years 2–3</span>
+                </div>
+                <p class="text-sm text-slate-600 leading-relaxed">
+                  Fine-tune multi-task prediction heads against ENCODE4 and 4D Nucleome experimental tracks. Perform in-silico saturation mutagenesis across 100,000 clinically uncharacterized loci.
+                </p>
+              </div>
+
+              <div class="p-5 rounded-lg bg-slate-50 border-l-4 border-msu-green border border-slate-200">
+                <div class="flex items-center justify-between mb-2">
+                  <h3 class="font-bold text-msu-dark text-lg">Aim 3: Experimental CRISPR Validation</h3>
+                  <span class="badge badge-sm bg-emerald-100 text-msu-dark font-bold">Years 3–4</span>
+                </div>
+                <p class="text-sm text-slate-600 leading-relaxed">
+                  Collaborate with MSU wet-lab partners to validate high-scoring non-coding variant predictions in induced pluripotent stem cell (iPSC) cardiac and neuronal differentiation models using prime editing.
+                </p>
+              </div>
+            </div>
+          </section>
+
+          <!-- METHODOLOGY FIGURE / ACCESSIBLE DIAGRAM PLACEHOLDER -->
+          <section aria-labelledby="methodology-heading" class="bg-white p-8 rounded-xl border border-slate-200 shadow-sm">
+            <h2 id="methodology-heading" class="text-2xl font-extrabold text-msu-dark pb-3 border-b border-slate-200 mb-4">
+              Computational Architecture
+            </h2>
+            
+            <figure class="my-6">
+              <div class="p-6 bg-slate-900 rounded-xl text-center text-slate-300 font-mono text-xs border border-slate-700">
+                <div class="grid grid-cols-1 sm:grid-cols-3 gap-4 items-center">
+                  <div class="p-4 bg-slate-800 rounded border border-emerald-500/40 text-emerald-400">
+                    <div class="font-bold text-sm text-white mb-1">1. DNA Sequence</div>
+                    100kb Genomic Context<br>FASTA / 1-hot Encoded
+                  </div>
+                  <div class="p-4 bg-emerald-950 rounded border border-emerald-400 text-emerald-300">
+                    <div class="font-bold text-sm text-white mb-1">2. Transformer Core</div>
+                    FlashAttention-2 &bull; 32 Layers<br>SE(3) Equivariant Blocks
+                  </div>
+                  <div class="p-4 bg-slate-800 rounded border border-emerald-500/40 text-emerald-400">
+                    <div class="font-bold text-sm text-white mb-1">3. Functional Heads</div>
+                    ChIP, ATAC, CAGE<br>Variant Impact &Delta;-Scores
+                  </div>
+                </div>
+              </div>
+              <figcaption class="text-xs text-slate-500 mt-2 text-center">
+                <strong>Figure 1:</strong> High-level pipeline of the Deep Regulome transformer backbone processing long-range DNA contexts into cell-type specific epigenetic predictions.
+              </figcaption>
+            </figure>
+          </section>
+
+          <!-- STATS CARDS -->
+          <section aria-label="Performance Metrics" class="grid grid-cols-1 sm:grid-cols-3 gap-4">
+            <div class="p-5 bg-white border border-slate-200 rounded-xl shadow-sm text-center">
+              <div class="text-3xl font-extrabold text-msu-green">0.89</div>
+              <div class="text-xs font-semibold text-slate-600 mt-1">Pearson Correlation (RNA-seq)</div>
+            </div>
+            <div class="p-5 bg-white border border-slate-200 rounded-xl shadow-sm text-center">
+              <div class="text-3xl font-extrabold text-msu-green">100 kb</div>
+              <div class="text-xs font-semibold text-slate-600 mt-1">Effective Receptive Field</div>
+            </div>
+            <div class="p-5 bg-white border border-slate-200 rounded-xl shadow-sm text-center">
+              <div class="text-3xl font-extrabold text-msu-green">240+</div>
+              <div class="text-xs font-semibold text-slate-600 mt-1">Human Cell Types Modeled</div>
+            </div>
+          </section>
+
+        </article>
+
+        <!-- COLUMN 2: SIDEBAR METADATA (4 COLS) -->
+        <aside class="lg:col-span-4 space-y-6" aria-label="Grant and Project Metadata">
+          
+          <!-- GRANT METADATA CARD -->
+          <div class="card bg-white border border-slate-200 shadow-sm p-6">
+            <h3 class="text-lg font-bold text-msu-dark pb-3 border-b border-slate-200 mb-4">Grant Details</h3>
+            
+            <dl class="space-y-3 text-sm">
+              <div>
+                <dt class="text-xs font-bold uppercase tracking-wider text-slate-500">Funding Agency</dt>
+                <dd class="font-medium text-slate-800">National Institutes of Health (NIH / NHGRI)</dd>
+              </div>
+              <div>
+                <dt class="text-xs font-bold uppercase tracking-wider text-slate-500">Award Number</dt>
+                <dd class="font-mono text-xs font-bold text-msu-green">R01 HG012890-01</dd>
+              </div>
+              <div>
+                <dt class="text-xs font-bold uppercase tracking-wider text-slate-500">Principal Investigator</dt>
+                <dd class="font-medium text-slate-800"><a href="faculty-profile.html" class="text-msu-green hover:underline">Dr. Sparty Spartan</a></dd>
+              </div>
+              <div>
+                <dt class="text-xs font-bold uppercase tracking-wider text-slate-500">Project Period</dt>
+                <dd class="text-slate-700">July 1, 2025 – June 30, 2029</dd>
+              </div>
+              <div>
+                <dt class="text-xs font-bold uppercase tracking-wider text-slate-500">Total Funding</dt>
+                <dd class="text-slate-700">$2,140,000 USD</dd>
+              </div>
+            </dl>
+          </div>
+
+          <!-- TEAM ASSIGNED CARD -->
+          <div class="card bg-white border border-slate-200 shadow-sm p-6">
+            <h3 class="text-lg font-bold text-msu-dark pb-3 border-b border-slate-200 mb-4">Key Personnel</h3>
+            
+            <ul class="space-y-3 text-sm">
+              <li class="flex items-center gap-3">
+                <div class="w-8 h-8 rounded-full bg-emerald-100 text-msu-dark font-bold text-xs flex items-center justify-center shrink-0">SJ</div>
+                <div>
+                  <div class="font-bold text-slate-800">Dr. Sparty Spartan</div>
+                  <div class="text-xs text-slate-500">Lead PI &bull; CMSE/CSE</div>
+                </div>
+              </li>
+              <li class="flex items-center gap-3">
+                <div class="w-8 h-8 rounded-full bg-slate-100 text-slate-700 font-bold text-xs flex items-center justify-center shrink-0">YZ</div>
+                <div>
+                  <div class="font-bold text-slate-800">Dr. Yan Zhao</div>
+                  <div class="text-xs text-slate-500">Postdoctoral Scholar</div>
+                </div>
+              </li>
+              <li class="flex items-center gap-3">
+                <div class="w-8 h-8 rounded-full bg-slate-100 text-slate-700 font-bold text-xs flex items-center justify-center shrink-0">DB</div>
+                <div>
+                  <div class="font-bold text-slate-800">Devin Brooks</div>
+                  <div class="text-xs text-slate-500">Graduate Research Assistant</div>
+                </div>
+              </li>
+            </ul>
+          </div>
+
+          <!-- OPEN SCIENCE & DATA -->
+          <div class="card bg-emerald-50 border border-emerald-300 shadow-sm p-6">
+            <h3 class="text-lg font-bold text-msu-dark mb-2">Open Data &amp; Software</h3>
+            <p class="text-xs text-slate-600 mb-4">
+              All trained checkpoint weights, benchmark datasets, and PyTorch inference pipelines are released publicly under permissive open-source licenses.
+            </p>
+            <div class="space-y-2">
+              <a href="https://github.com" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline border-msu-green text-msu-green hover:bg-msu-green hover:text-white w-full font-semibold">
+                GitHub Repository
+              </a>
+              <a href="https://huggingface.co" target="_blank" rel="noopener noreferrer" class="btn btn-sm btn-outline border-msu-green text-msu-green hover:bg-msu-green hover:text-white w-full font-semibold">
+                HuggingFace Model Hub
+              </a>
+            </div>
+          </div>
+
+        </aside>
+
+      </div>
+    </div>
+  </main>
+
+  <!-- ========================================================================= -->
+  <!-- FOOTER: Institutional MSU Footer                                          -->
+  <!-- ========================================================================= -->
+  <footer role="contentinfo" class="msu-footer pt-12 pb-8 px-4 sm:px-8 mt-auto">
+    <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 pb-8 border-b border-emerald-900/60">
+      <div>
+        <div class="flex items-center gap-2.5 mb-4">
+          <svg class="h-8 w-8 text-white shrink-0" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M12 2C6.48 2 2 6.48 2 12c0 3.2 1.5 6.06 3.84 7.9L5 22h4l.84-2.52C10.53 19.82 11.25 20 12 20s1.47-.18 2.16-.52L15 22h4l-.84-2.1C20.5 18.06 22 15.2 22 12c0-5.52-4.48-10-10-10zm0 3c3.87 0 7 3.13 7 7 0 1.9-.76 3.63-2 4.9V13h-2v3.13c-.92.54-1.92.87-3 .87s-2.08-.33-3-.87V13H7v3.9c-1.24-1.27-2-3-2-4.9 0-3.87 3.13-7 7-7z"/>
+          </svg>
+          <span class="font-bold tracking-wider text-sm sm:text-base uppercase text-white font-sans">Michigan State University</span>
+        </div>
+        <address class="not-italic text-xs sm:text-sm text-slate-300 space-y-1">
+          <p class="font-semibold text-white">Center for Genomic Intelligence &amp; Machine Learning</p>
+          <p>Biomedical &amp; Physical Sciences, Rm 4200</p>
+          <p>East Lansing, MI 48824</p>
+          <p class="pt-2"><a href="mailto:genomics-lab@msu.edu" class="text-emerald-300 hover:text-white underline">genomics-lab@msu.edu</a></p>
+        </address>
+      </div>
+
+      <div>
+        <h3 class="text-sm font-bold uppercase tracking-wider text-white mb-3 font-sans">Site Links</h3>
+        <ul class="text-xs sm:text-sm space-y-2 text-slate-300">
+          <li><a href="lab-home.html" class="hover:text-emerald-300 underline-offset-4 hover:underline">Lab Research Home</a></li>
+          <li><a href="faculty-profile.html" class="hover:text-emerald-300 underline-offset-4 hover:underline">Principal Investigator</a></li>
+          <li><a href="team.html" class="hover:text-emerald-300 underline-offset-4 hover:underline">Team Directory</a></li>
+          <li><a href="publications.html" class="hover:text-emerald-300 underline-offset-4 hover:underline">Publications &amp; Citations</a></li>
+          <li><a href="index.html" class="hover:text-emerald-300 underline-offset-4 hover:underline">&larr; Return to Template Hub</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h3 class="text-sm font-bold uppercase tracking-wider text-white mb-3 font-sans">Institutional Links</h3>
+        <ul class="text-xs sm:text-sm space-y-2 text-slate-300">
+          <li><span>Call MSU: </span><a href="tel:5173551851" class="text-white font-bold hover:text-emerald-300">(517) 355-1851</a></li>
+          <li><a href="https://msu.edu" target="_blank" rel="noopener noreferrer" class="hover:text-emerald-300 underline-offset-4 hover:underline">Visit msu.edu</a></li>
+          <li><a href="https://civilrights.msu.edu/policies/notice-of-non-discrimination.html" target="_blank" rel="noopener noreferrer" class="hover:text-emerald-300 underline-offset-4 hover:underline">Notice of Non-Discrimination</a></li>
+          <li><a href="https://msu.edu/privacy" target="_blank" rel="noopener noreferrer" class="hover:text-emerald-300 underline-offset-4 hover:underline">Privacy Statement</a></li>
+          <li><a href="https://webaccess.msu.edu" target="_blank" rel="noopener noreferrer" class="hover:text-emerald-300 underline-offset-4 hover:underline">Web Accessibility / Accessible MSU</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="max-w-7xl mx-auto pt-6 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-400 gap-3">
+      <p>&copy; Michigan State University. Project Detail Template.</p>
+      <p class="text-slate-400">WCAG 2.1 Level AA Compliant • DaisyUI + Tailwind CSS</p>
+    </div>
+  </footer>
+
+  <script src="dist/js/msu-template.js"></script>
+</body>
+</html>

@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="msu">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Lab Members & Team | Center for Genomic Intelligence | Michigan State University</title>
+  <meta name="description" content="Meet the research team, postdoctoral scholars, graduate students, and alumni at the Center for Genomic Intelligence & Machine Learning at MSU.">
+  <link rel="stylesheet" href="dist/css/msu-theme.css">
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased flex flex-col min-h-screen">
+
+  <!-- ========================================================================= -->
+  <!-- ACCESSIBILITY: Skip to main content landmark (WCAG 2.1 AA)               -->
+  <!-- ========================================================================= -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- ========================================================================= -->
+  <!-- HEADER: Tier 1 - MSU Institutional Masthead                               -->
+  <!-- ========================================================================= -->
+  <header role="banner" class="w-full">
+    <div class="msu-masthead px-4 sm:px-8 py-2.5">
+      <div class="max-w-7xl mx-auto flex items-center justify-between">
+        <a href="https://msu.edu" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2.5 text-white hover:text-emerald-200 transition-colors py-1 group" aria-label="Michigan State University Homepage (opens in new tab)">
+          <svg class="h-6 w-6 text-white group-hover:scale-105 transition-transform shrink-0" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M12 2C6.48 2 2 6.48 2 12c0 3.2 1.5 6.06 3.84 7.9L5 22h4l.84-2.52C10.53 19.82 11.25 20 12 20s1.47-.18 2.16-.52L15 22h4l-.84-2.1C20.5 18.06 22 15.2 22 12c0-5.52-4.48-10-10-10zm0 3c3.87 0 7 3.13 7 7 0 1.9-.76 3.63-2 4.9V13h-2v3.13c-.92.54-1.92.87-3 .87s-2.08-.33-3-.87V13H7v3.9c-1.24-1.27-2-3-2-4.9 0-3.87 3.13-7 7-7z"/>
+          </svg>
+          <span class="font-extrabold tracking-wider text-xs sm:text-sm uppercase font-sans">Michigan State University</span>
+        </a>
+
+        <div class="flex items-center gap-4 text-xs text-emerald-100">
+          <a href="index.html" class="hidden sm:inline-block font-semibold hover:text-white">&larr; Template Index</a>
+          <a href="https://research.msu.edu" target="_blank" rel="noopener noreferrer" class="hover:text-white">MSU Research</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- ========================================================================= -->
+    <!-- HEADER: Tier 2 - Unit Identity & Accessible Navigation                     -->
+    <!-- ========================================================================= -->
+    <div class="msu-unit-bar">
+      <div class="max-w-7xl mx-auto px-4 sm:px-8 py-4">
+        <div class="flex items-center justify-between">
+          <div>
+            <div class="text-xs uppercase tracking-wider text-emerald-800 font-semibold mb-1">
+              <span>College of Natural Science</span>
+              <span class="mx-1 text-slate-300" aria-hidden="true">/</span>
+              <span>Center for Genomic Intelligence &amp; Machine Learning</span>
+            </div>
+            <a href="lab-home.html" class="text-xl sm:text-2xl font-extrabold text-msu-dark hover:text-msu-green transition-colors">
+              Lab Personnel &amp; Alumni
+            </a>
+          </div>
+
+          <button 
+            type="button" 
+            class="md:hidden btn btn-ghost btn-square text-msu-dark" 
+            data-toggle-nav="true" 
+            aria-controls="team-nav-menu" 
+            aria-expanded="false" 
+            aria-label="Toggle navigation menu"
+          >
+            <svg class="h-6 w-6 nav-icon-open" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
+            <svg class="h-6 w-6 nav-icon-close hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+            </svg>
+          </button>
+        </div>
+
+        <nav id="team-nav-menu" aria-label="Team Site Navigation" class="hidden md:block mt-4 pt-3 border-t border-slate-200">
+          <ul class="flex flex-col md:flex-row md:items-center gap-1 sm:gap-2 text-sm font-semibold text-slate-700">
+            <li><a href="lab-home.html" class="block px-3 py-2 rounded-md hover:bg-slate-100 hover:text-msu-green transition-colors">Home</a></li>
+            <li><a href="project-detail.html" class="block px-3 py-2 rounded-md hover:bg-slate-100 hover:text-msu-green transition-colors">Research Projects</a></li>
+            <li><a href="publications.html" class="block px-3 py-2 rounded-md hover:bg-slate-100 hover:text-msu-green transition-colors">Publications</a></li>
+            <li><a href="team.html" class="block px-3 py-2 rounded-md bg-emerald-50 text-msu-green border-b-2 border-msu-green" aria-current="page">Team</a></li>
+            <li><a href="faculty-profile.html" class="block px-3 py-2 rounded-md hover:bg-slate-100 hover:text-msu-green transition-colors">Principal Investigator</a></li>
+            <li><a href="content-page.html" class="block px-3 py-2 rounded-md hover:bg-slate-100 hover:text-msu-green transition-colors">Resources &amp; Software</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <!-- ========================================================================= -->
+  <!-- MAIN CONTENT REGION                                                       -->
+  <!-- ========================================================================= -->
+  <main id="main-content" role="main" class="flex-grow py-10 px-4 sm:px-8">
+    <div class="max-w-7xl mx-auto space-y-12">
+      
+      <!-- BREADCRUMB NAVIGATION (WCAG Accessible) -->
+      <nav aria-label="Breadcrumb" class="text-xs text-slate-500">
+        <ol class="flex items-center gap-2">
+          <li><a href="lab-home.html" class="hover:text-msu-green underline">Lab Home</a></li>
+          <li aria-hidden="true">&rsaquo;</li>
+          <li class="font-bold text-slate-800" aria-current="page">People &amp; Team Directory</li>
+        </ol>
+      </nav>
+
+      <!-- PAGE INTRO -->
+      <div class="border-b border-slate-200 pb-6">
+        <h1 class="text-3xl sm:text-4xl font-extrabold text-msu-dark">Research Team &amp; Personnel</h1>
+        <p class="text-base text-slate-600 mt-2 max-w-3xl">
+          Our laboratory brings together computer scientists, computational biologists, biochemists, and software engineers collaborating across Michigan State University.
+        </p>
+      </div>
+
+      <!-- SECTION 1: PRINCIPAL INVESTIGATOR -->
+      <section aria-labelledby="pi-heading">
+        <h2 id="pi-heading" class="text-xl font-bold uppercase tracking-wider text-msu-green mb-6 flex items-center gap-2">
+          <span class="w-2.5 h-2.5 rounded-full bg-msu-green" aria-hidden="true"></span>
+          Principal Investigator
+        </h2>
+
+        <div class="card bg-white border border-slate-200 shadow-md p-6 sm:p-8">
+          <div class="grid grid-cols-1 md:grid-cols-12 gap-8 items-center">
+            <div class="md:col-span-3 flex justify-center">
+              <div class="w-36 h-36 sm:w-44 sm:h-44 rounded-full border-4 border-msu-green p-1 bg-slate-100 flex items-center justify-center overflow-hidden">
+                <svg class="w-full h-full text-slate-400" fill="currentColor" viewBox="0 0 24 24" aria-label="Photo of Dr. Sparty Spartan">
+                  <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
+                </svg>
+              </div>
+            </div>
+
+            <div class="md:col-span-9 space-y-3">
+              <div>
+                <h3 class="text-2xl font-extrabold text-msu-dark">Dr. Sparty Spartan</h3>
+                <p class="text-sm font-semibold text-emerald-800">Associate Professor of CMSE &amp; CSE</p>
+                <p class="text-xs text-slate-500">Biomedical &amp; Physical Sciences, Rm 4212 &bull; East Lansing, MI</p>
+              </div>
+
+              <p class="text-sm text-slate-600 leading-relaxed">
+                Directs the lab and mentors undergraduate, graduate, and postdoctoral researchers. Research interests include sequence-to-function deep architectures, non-coding variant pathology, and structural graph algorithms.
+              </p>
+
+              <div class="pt-2 flex flex-wrap items-center gap-3">
+                <a href="faculty-profile.html" class="btn btn-sm btn-primary bg-msu-green hover:bg-msu-dark text-white font-semibold">
+                  Full Faculty Profile &rarr;
+                </a>
+                <a href="mailto:jenkins@msu.edu" class="btn btn-sm btn-outline border-slate-300 text-slate-700 hover:bg-slate-100">
+                  <svg class="w-4 h-4 mr-1 text-slate-500" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M3 8l7.89 5.26a2 2 0 002.22 0L21 8M5 19h14a2 2 0 002-2V7a2 2 0 00-2-2H5a2 2 0 00-2 2v10a2 2 0 002 2z"></path></svg>
+                  jenkins@msu.edu
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION 2: POSTDOCTORAL RESEARCHERS -->
+      <section aria-labelledby="postdoc-heading">
+        <h2 id="postdoc-heading" class="text-xl font-bold uppercase tracking-wider text-msu-green mb-6 flex items-center gap-2">
+          <span class="w-2.5 h-2.5 rounded-full bg-emerald-600" aria-hidden="true"></span>
+          Postdoctoral Scholars &amp; Research Scientists
+        </h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-6">
+          
+          <div class="card bg-white border border-slate-200 shadow-sm p-6 flex flex-col justify-between">
+            <div class="flex items-start gap-4 mb-4">
+              <div class="w-20 h-20 rounded-full border-2 border-emerald-300 bg-slate-100 shrink-0 flex items-center justify-center overflow-hidden">
+                <svg class="w-full h-full text-slate-400" fill="currentColor" viewBox="0 0 24 24" aria-label="Photo of Dr. Yan Zhao">
+                  <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
+                </svg>
+              </div>
+              <div>
+                <h3 class="text-lg font-bold text-msu-dark">Dr. Yan Zhao</h3>
+                <p class="text-xs font-semibold text-emerald-800">Postdoctoral Research Associate</p>
+                <p class="text-xs text-slate-500">Ph.D. in Bioinformatics, Tsinghua University</p>
+                <div class="badge badge-sm bg-slate-100 text-slate-700 mt-2">Graph Neural Networks</div>
+              </div>
+            </div>
+            <p class="text-xs text-slate-600 mb-4 leading-relaxed">
+              Leading the development of SE(3)-equivariant geometric neural networks for modeling high-order chromatin conformations and enhancer-promoter loops.
+            </p>
+            <div class="pt-3 border-t border-slate-100 flex items-center justify-between text-xs text-slate-500">
+              <a href="mailto:zhaoy@msu.edu" class="hover:text-msu-green font-medium">zhaoy@msu.edu</a>
+              <a href="#" class="hover:text-msu-green font-medium">Google Scholar &rarr;</a>
+            </div>
+          </div>
+
+          <div class="card bg-white border border-slate-200 shadow-sm p-6 flex flex-col justify-between">
+            <div class="flex items-start gap-4 mb-4">
+              <div class="w-20 h-20 rounded-full border-2 border-emerald-300 bg-slate-100 shrink-0 flex items-center justify-center overflow-hidden">
+                <svg class="w-full h-full text-slate-400" fill="currentColor" viewBox="0 0 24 24" aria-label="Photo of Dr. Elena Rostova">
+                  <path d="M12 12c2.21 0 4-1.79 4-4s-1.79-4-4-4-4 1.79-4 4 1.79 4 4 4zm0 2c-2.67 0-8 1.34-8 4v2h16v-2c0-2.66-5.33-4-8-4z"/>
+                </svg>
+              </div>
+              <div>
+                <h3 class="text-lg font-bold text-msu-dark">Dr. Elena Rostova</h3>
+                <p class="text-xs font-semibold text-emerald-800">Senior Research Scientist</p>
+                <p class="text-xs text-slate-500">Ph.D. in Computational Biology, Oxford</p>
+                <div class="badge badge-sm bg-slate-100 text-slate-700 mt-2">Multi-Omics Integration</div>
+              </div>
+            </div>
+            <p class="text-xs text-slate-600 mb-4 leading-relaxed">
+              Focuses on single-cell RNA-seq and ATAC-seq harmonization to identify rare cell sub-populations implicated in autoimmune disease progression.
+            </p>
+            <div class="pt-3 border-t border-slate-100 flex items-center justify-between text-xs text-slate-500">
+              <a href="mailto:rostova@msu.edu" class="hover:text-msu-green font-medium">rostova@msu.edu</a>
+              <a href="#" class="hover:text-msu-green font-medium">Google Scholar &rarr;</a>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- SECTION 3: PHD STUDENTS -->
+      <section aria-labelledby="phd-heading">
+        <h2 id="phd-heading" class="text-xl font-bold uppercase tracking-wider text-msu-green mb-6 flex items-center gap-2">
+          <span class="w-2.5 h-2.5 rounded-full bg-emerald-600" aria-hidden="true"></span>
+          Ph.D. Graduate Researchers
+        </h2>
+
+        <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+          
+          <div class="card bg-white border border-slate-200 shadow-sm p-5">
+            <h3 class="text-base font-bold text-msu-dark">Devin Brooks</h3>
+            <p class="text-xs font-semibold text-emerald-800">4th Year Ph.D. Candidate, CMSE</p>
+            <p class="text-xs text-slate-600 mt-2">Transformer architectures for predicting transcription factor binding saturation windows.</p>
+            <div class="mt-4 pt-3 border-t border-slate-100 text-xs">
+              <a href="mailto:brooksd@msu.edu" class="text-msu-green hover:underline">brooksd@msu.edu</a>
+            </div>
+          </div>
+
+          <div class="card bg-white border border-slate-200 shadow-sm p-5">
+            <h3 class="text-base font-bold text-msu-dark">Priya Sharma</h3>
+            <p class="text-xs font-semibold text-emerald-800">3rd Year Ph.D. Candidate, CSE</p>
+            <p class="text-xs text-slate-600 mt-2">Geometric diffusion models for de novo macrocyclic peptide binder generation.</p>
+            <div class="mt-4 pt-3 border-t border-slate-100 text-xs">
+              <a href="mailto:sharmap@msu.edu" class="text-msu-green hover:underline">sharmap@msu.edu</a>
+            </div>
+          </div>
+
+          <div class="card bg-white border border-slate-200 shadow-sm p-5">
+            <h3 class="text-base font-bold text-msu-dark">Lucas Silva</h3>
+            <p class="text-xs font-semibold text-emerald-800">2nd Year Ph.D. Student, CMSE</p>
+            <p class="text-xs text-slate-600 mt-2">Benchmarking deep generative models on clinical cardiovascular biobank cohorts.</p>
+            <div class="mt-4 pt-3 border-t border-slate-100 text-xs">
+              <a href="mailto:silval@msu.edu" class="text-msu-green hover:underline">silval@msu.edu</a>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+      <!-- SECTION 4: LAB ALUMNI -->
+      <section aria-labelledby="alumni-heading">
+        <h2 id="alumni-heading" class="text-xl font-bold uppercase tracking-wider text-msu-green mb-6 flex items-center gap-2">
+          <span class="w-2.5 h-2.5 rounded-full bg-slate-400" aria-hidden="true"></span>
+          Lab Alumni
+        </h2>
+
+        <div class="overflow-x-auto bg-white border border-slate-200 rounded-lg shadow-sm">
+          <table class="table w-full text-sm">
+            <thead class="bg-slate-50 text-slate-700">
+              <tr>
+                <th scope="col" class="font-bold">Name</th>
+                <th scope="col" class="font-bold">Role in Lab</th>
+                <th scope="col" class="font-bold">Years</th>
+                <th scope="col" class="font-bold">Current Position</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr class="hover:bg-slate-50">
+                <td class="font-semibold text-msu-dark">Dr. Michael Chen</td>
+                <td>Postdoctoral Fellow</td>
+                <td>2021 – 2024</td>
+                <td><span class="badge badge-success badge-sm text-white font-semibold">Assistant Professor</span> University of Utah</td>
+              </tr>
+              <tr class="hover:bg-slate-50">
+                <td class="font-semibold text-msu-dark">Dr. Amira Farouk</td>
+                <td>Ph.D. Graduate</td>
+                <td>2020 – 2024</td>
+                <td><span class="badge badge-info badge-sm text-white font-semibold">Senior Scientist</span> Genentech Computational Sciences</td>
+              </tr>
+              <tr class="hover:bg-slate-50">
+                <td class="font-semibold text-msu-dark">Brian Taylor</td>
+                <td>M.S. Student</td>
+                <td>2022 – 2024</td>
+                <td><span class="badge badge-neutral badge-sm text-white font-semibold">Bioinformatics Engineer</span> Illumina Inc.</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+      </section>
+
+      <!-- SECTION 5: JOIN US CALLOUT -->
+      <section id="join" aria-labelledby="join-heading" class="bg-emerald-50 border-2 border-emerald-300 rounded-xl p-8">
+        <div class="max-w-3xl">
+          <h2 id="join-heading" class="text-2xl font-extrabold text-msu-dark mb-2">Join the Research Group</h2>
+          <p class="text-slate-700 text-sm leading-relaxed mb-4">
+            We are always looking for curious and driven researchers to join us at Michigan State University. Graduate applicants should apply directly to the CMSE or CSE PhD programs and mention Dr. Sparty Spartan in their statement of purpose.
+          </p>
+          <div class="flex flex-wrap gap-4 items-center">
+            <a href="mailto:jenkins@msu.edu?subject=Prospective%20Lab%20Inquiry" class="btn btn-primary bg-msu-green hover:bg-msu-dark text-white font-bold">
+              Email Application / CV
+            </a>
+            <span class="text-xs text-slate-500">Please attach a brief statement of research interests and your resume.</span>
+          </div>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- ========================================================================= -->
+  <!-- FOOTER: Institutional MSU Footer                                          -->
+  <!-- ========================================================================= -->
+  <footer role="contentinfo" class="msu-footer pt-12 pb-8 px-4 sm:px-8 mt-auto">
+    <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 pb-8 border-b border-emerald-900/60">
+      <div>
+        <div class="flex items-center gap-2.5 mb-4">
+          <svg class="h-8 w-8 text-white shrink-0" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M12 2C6.48 2 2 6.48 2 12c0 3.2 1.5 6.06 3.84 7.9L5 22h4l.84-2.52C10.53 19.82 11.25 20 12 20s1.47-.18 2.16-.52L15 22h4l-.84-2.1C20.5 18.06 22 15.2 22 12c0-5.52-4.48-10-10-10zm0 3c3.87 0 7 3.13 7 7 0 1.9-.76 3.63-2 4.9V13h-2v3.13c-.92.54-1.92.87-3 .87s-2.08-.33-3-.87V13H7v3.9c-1.24-1.27-2-3-2-4.9 0-3.87 3.13-7 7-7z"/>
+          </svg>
+          <span class="font-bold tracking-wider text-sm sm:text-base uppercase text-white font-sans">Michigan State University</span>
+        </div>
+        <address class="not-italic text-xs sm:text-sm text-slate-300 space-y-1">
+          <p class="font-semibold text-white">Center for Genomic Intelligence &amp; Machine Learning</p>
+          <p>Biomedical &amp; Physical Sciences, Rm 4200</p>
+          <p>East Lansing, MI 48824</p>
+          <p class="pt-2"><a href="mailto:genomics-lab@msu.edu" class="text-emerald-300 hover:text-white underline">genomics-lab@msu.edu</a></p>
+        </address>
+      </div>
+
+      <div>
+        <h3 class="text-sm font-bold uppercase tracking-wider text-white mb-3 font-sans">Site Links</h3>
+        <ul class="text-xs sm:text-sm space-y-2 text-slate-300">
+          <li><a href="lab-home.html" class="hover:text-emerald-300 underline-offset-4 hover:underline">Lab Research Home</a></li>
+          <li><a href="faculty-profile.html" class="hover:text-emerald-300 underline-offset-4 hover:underline">Principal Investigator</a></li>
+          <li><a href="publications.html" class="hover:text-emerald-300 underline-offset-4 hover:underline">Publications &amp; Citations</a></li>
+          <li><a href="project-detail.html" class="hover:text-emerald-300 underline-offset-4 hover:underline">Active Projects</a></li>
+          <li><a href="index.html" class="hover:text-emerald-300 underline-offset-4 hover:underline">&larr; Return to Template Hub</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h3 class="text-sm font-bold uppercase tracking-wider text-white mb-3 font-sans">Institutional Links</h3>
+        <ul class="text-xs sm:text-sm space-y-2 text-slate-300">
+          <li><span>Call MSU: </span><a href="tel:5173551851" class="text-white font-bold hover:text-emerald-300">(517) 355-1851</a></li>
+          <li><a href="https://msu.edu" target="_blank" rel="noopener noreferrer" class="hover:text-emerald-300 underline-offset-4 hover:underline">Visit msu.edu</a></li>
+          <li><a href="https://civilrights.msu.edu/policies/notice-of-non-discrimination.html" target="_blank" rel="noopener noreferrer" class="hover:text-emerald-300 underline-offset-4 hover:underline">Notice of Non-Discrimination</a></li>
+          <li><a href="https://msu.edu/privacy" target="_blank" rel="noopener noreferrer" class="hover:text-emerald-300 underline-offset-4 hover:underline">Privacy Statement</a></li>
+          <li><a href="https://webaccess.msu.edu" target="_blank" rel="noopener noreferrer" class="hover:text-emerald-300 underline-offset-4 hover:underline">Web Accessibility / Accessible MSU</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="max-w-7xl mx-auto pt-6 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-400 gap-3">
+      <p>&copy; Michigan State University. Team Directory.</p>
+      <p class="text-slate-400">WCAG 2.1 Level AA Compliant • DaisyUI + Tailwind CSS</p>
+    </div>
+  </footer>
+
+  <script src="dist/js/msu-template.js"></script>
+</body>
+</html>

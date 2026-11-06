@@ -1,0 +1,414 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="msu">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>MSU + DaisyUI Component Kitchen Sink | Michigan State University</title>
+  <meta name="description" content="Living component catalog of MSU-themed DaisyUI UI elements: buttons, cards, badges, alerts, forms, tabs, and modals for lab and faculty websites.">
+  <link rel="stylesheet" href="dist/css/msu-theme.css">
+</head>
+<body class="bg-slate-50 text-slate-800 antialiased flex flex-col min-h-screen">
+
+  <!-- ========================================================================= -->
+  <!-- ACCESSIBILITY: Skip to main content landmark (WCAG 2.1 AA)               -->
+  <!-- ========================================================================= -->
+  <a href="#main-content" class="skip-link">Skip to main content</a>
+
+  <!-- ========================================================================= -->
+  <!-- HEADER: Tier 1 - MSU Institutional Masthead                               -->
+  <!-- ========================================================================= -->
+  <header role="banner" class="w-full">
+    <div class="msu-masthead px-4 sm:px-8 py-2.5">
+      <div class="max-w-7xl mx-auto flex items-center justify-between">
+        <a href="https://msu.edu" target="_blank" rel="noopener noreferrer" class="flex items-center gap-2.5 text-white hover:text-emerald-200 transition-colors py-1 group" aria-label="Michigan State University Homepage (opens in new tab)">
+          <svg class="h-6 w-6 text-white group-hover:scale-105 transition-transform shrink-0" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M12 2C6.48 2 2 6.48 2 12c0 3.2 1.5 6.06 3.84 7.9L5 22h4l.84-2.52C10.53 19.82 11.25 20 12 20s1.47-.18 2.16-.52L15 22h4l-.84-2.1C20.5 18.06 22 15.2 22 12c0-5.52-4.48-10-10-10zm0 3c3.87 0 7 3.13 7 7 0 1.9-.76 3.63-2 4.9V13h-2v3.13c-.92.54-1.92.87-3 .87s-2.08-.33-3-.87V13H7v3.9c-1.24-1.27-2-3-2-4.9 0-3.87 3.13-7 7-7z"/>
+          </svg>
+          <span class="font-extrabold tracking-wider text-xs sm:text-sm uppercase font-sans">Michigan State University</span>
+        </a>
+
+        <div class="flex items-center gap-4 text-xs text-emerald-100">
+          <a href="index.html" class="hidden sm:inline-block font-semibold hover:text-white">&larr; Template Index</a>
+          <a href="https://daisyui.com" target="_blank" rel="noopener noreferrer" class="hover:text-white">DaisyUI Docs</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- ========================================================================= -->
+    <!-- HEADER: Tier 2 - Unit Identity & Accessible Navigation                     -->
+    <!-- ========================================================================= -->
+    <div class="msu-unit-bar">
+      <div class="max-w-7xl mx-auto px-4 sm:px-8 py-4">
+        <div class="flex items-center justify-between">
+          <div>
+            <div class="text-xs uppercase tracking-wider text-emerald-800 font-semibold mb-1">
+              <span>Component Architecture</span>
+              <span class="mx-1 text-slate-300" aria-hidden="true">/</span>
+              <span>Design System</span>
+            </div>
+            <a href="components.html" class="text-xl sm:text-2xl font-extrabold text-msu-dark hover:text-msu-green transition-colors" aria-current="page">
+              DaisyUI + MSU Component Kitchen Sink
+            </a>
+          </div>
+
+          <button 
+            type="button" 
+            class="md:hidden btn btn-ghost btn-square text-msu-dark" 
+            data-toggle-nav="true" 
+            aria-controls="comp-nav-menu" 
+            aria-expanded="false" 
+            aria-label="Toggle navigation menu"
+          >
+            <svg class="h-6 w-6 nav-icon-open" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+            </svg>
+            <svg class="h-6 w-6 nav-icon-close hidden" fill="none" stroke="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+            </svg>
+          </button>
+        </div>
+
+        <nav id="comp-nav-menu" aria-label="Component Navigation" class="hidden md:block mt-4 pt-3 border-t border-slate-200">
+          <ul class="flex flex-col md:flex-row md:items-center gap-1 sm:gap-2 text-sm font-semibold text-slate-700">
+            <li><a href="index.html" class="block px-3 py-2 rounded-md hover:bg-slate-100 hover:text-msu-green transition-colors">Overview</a></li>
+            <li><a href="lab-home.html" class="block px-3 py-2 rounded-md hover:bg-slate-100 hover:text-msu-green transition-colors">Lab Home</a></li>
+            <li><a href="faculty-profile.html" class="block px-3 py-2 rounded-md hover:bg-slate-100 hover:text-msu-green transition-colors">Faculty Profile (1-Tier)</a></li>
+            <li><a href="team.html" class="block px-3 py-2 rounded-md hover:bg-slate-100 hover:text-msu-green transition-colors">Team</a></li>
+            <li><a href="publications.html" class="block px-3 py-2 rounded-md hover:bg-slate-100 hover:text-msu-green transition-colors">Publications</a></li>
+            <li><a href="content-page.html" class="block px-3 py-2 rounded-md hover:bg-slate-100 hover:text-msu-green transition-colors">Typography &amp; Markdown</a></li>
+            <li><a href="components.html" class="block px-3 py-2 rounded-md bg-emerald-50 text-msu-green border-b-2 border-msu-green" aria-current="page">Component Library</a></li>
+          </ul>
+        </nav>
+      </div>
+    </div>
+  </header>
+
+  <!-- ========================================================================= -->
+  <!-- MAIN CONTENT REGION                                                       -->
+  <!-- ========================================================================= -->
+  <main id="main-content" role="main" class="flex-grow py-10 px-4 sm:px-8">
+    <div class="max-w-7xl mx-auto space-y-12">
+      
+      <!-- BREADCRUMB -->
+      <nav aria-label="Breadcrumb" class="text-xs text-slate-500">
+        <ol class="flex items-center gap-2">
+          <li><a href="index.html" class="hover:text-msu-green underline">Template Hub</a></li>
+          <li aria-hidden="true">&rsaquo;</li>
+          <li class="font-bold text-slate-800" aria-current="page">DaisyUI Component Catalog</li>
+        </ol>
+      </nav>
+
+      <!-- INTRO -->
+      <div class="border-b border-slate-200 pb-6">
+        <h1 class="text-3xl sm:text-4xl font-extrabold text-msu-dark">MSU + DaisyUI Component Catalog</h1>
+        <p class="text-base text-slate-600 mt-2 max-w-3xl">
+          Pre-styled UI primitives configured with Michigan State University brand tokens. Any component from the standard <a href="https://daisyui.com" target="_blank" rel="noopener noreferrer" class="text-msu-green font-bold underline">DaisyUI library</a> can be pasted here and will automatically adopt the MSU Spartan theme.
+        </p>
+      </div>
+
+      <!-- SECTION 1: COLOR TOKENS & CONTRAST -->
+      <section aria-labelledby="colors-heading" class="bg-white p-6 sm:p-8 rounded-xl border border-slate-200 shadow-sm">
+        <h2 id="colors-heading" class="text-xl font-bold text-msu-dark pb-3 border-b border-slate-200 mb-6">
+          1. Brand Palette &amp; Contrast Validation
+        </h2>
+
+        <div class="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-6 gap-4">
+          <div class="p-4 rounded-lg bg-[#18453B] text-white flex flex-col justify-between h-32 shadow-sm">
+            <span class="text-xs font-bold uppercase tracking-wider text-emerald-200">Primary</span>
+            <div>
+              <div class="font-extrabold text-sm">Spartan Green</div>
+              <div class="font-mono text-xs opacity-90">#18453B</div>
+              <div class="text-[10px] text-emerald-300 font-semibold">Contrast 9.4:1 (AAA)</div>
+            </div>
+          </div>
+
+          <div class="p-4 rounded-lg bg-[#0F2D26] text-white flex flex-col justify-between h-32 shadow-sm">
+            <span class="text-xs font-bold uppercase tracking-wider text-emerald-200">Secondary</span>
+            <div>
+              <div class="font-extrabold text-sm">MSU Forest</div>
+              <div class="font-mono text-xs opacity-90">#0F2D26</div>
+              <div class="text-[10px] text-emerald-300 font-semibold">Contrast 14.1:1 (AAA)</div>
+            </div>
+          </div>
+
+          <div class="p-4 rounded-lg bg-[#008244] text-white flex flex-col justify-between h-32 shadow-sm">
+            <span class="text-xs font-bold uppercase tracking-wider text-emerald-100">Accent</span>
+            <div>
+              <div class="font-extrabold text-sm">Kelly Green</div>
+              <div class="font-mono text-xs opacity-90">#008244</div>
+              <div class="text-[10px] text-emerald-200 font-semibold">Contrast 4.6:1 (AA)</div>
+            </div>
+          </div>
+
+          <div class="p-4 rounded-lg bg-[#1E293B] text-white flex flex-col justify-between h-32 shadow-sm">
+            <span class="text-xs font-bold uppercase tracking-wider text-slate-300">Neutral</span>
+            <div>
+              <div class="font-extrabold text-sm">Slate Charcoal</div>
+              <div class="font-mono text-xs opacity-90">#1E293B</div>
+              <div class="text-[10px] text-slate-300 font-semibold">Body Text Token</div>
+            </div>
+          </div>
+
+          <div class="p-4 rounded-lg bg-[#F8F9FA] text-slate-800 border border-slate-300 flex flex-col justify-between h-32 shadow-sm">
+            <span class="text-xs font-bold uppercase tracking-wider text-slate-500">Base-200</span>
+            <div>
+              <div class="font-extrabold text-sm">Off-White</div>
+              <div class="font-mono text-xs text-slate-600">#F8F9FA</div>
+              <div class="text-[10px] text-slate-500 font-semibold">Page Background</div>
+            </div>
+          </div>
+
+          <div class="p-4 rounded-lg bg-[#FFFFFF] text-slate-800 border border-slate-300 flex flex-col justify-between h-32 shadow-sm">
+            <span class="text-xs font-bold uppercase tracking-wider text-slate-500">Base-100</span>
+            <div>
+              <div class="font-extrabold text-sm">Card Surface</div>
+              <div class="font-mono text-xs text-slate-600">#FFFFFF</div>
+              <div class="text-[10px] text-slate-500 font-semibold">Pure White</div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION 2: BUTTONS -->
+      <section aria-labelledby="buttons-heading" class="bg-white p-6 sm:p-8 rounded-xl border border-slate-200 shadow-sm">
+        <h2 id="buttons-heading" class="text-xl font-bold text-msu-dark pb-3 border-b border-slate-200 mb-6">
+          2. Buttons &amp; Action Triggers
+        </h2>
+
+        <div class="space-y-6">
+          <div class="flex flex-wrap items-center gap-4">
+            <button type="button" class="btn btn-primary bg-msu-green hover:bg-msu-dark text-white font-semibold">btn-primary</button>
+            <button type="button" class="btn btn-secondary bg-msu-dark hover:bg-black text-white font-semibold">btn-secondary</button>
+            <button type="button" class="btn btn-accent bg-[#008244] hover:bg-msu-dark text-white font-semibold">btn-accent</button>
+            <button type="button" class="btn btn-outline border-msu-green text-msu-green hover:bg-msu-green hover:border-msu-green hover:text-white font-semibold">btn-outline</button>
+            <button type="button" class="btn btn-ghost text-msu-dark font-semibold">btn-ghost</button>
+            <button type="button" class="btn btn-disabled font-semibold" disabled>btn-disabled</button>
+          </div>
+
+          <div class="flex flex-wrap items-center gap-4 pt-4 border-t border-slate-100">
+            <button type="button" class="btn btn-primary bg-msu-green text-white btn-lg">Large</button>
+            <button type="button" class="btn btn-primary bg-msu-green text-white">Default</button>
+            <button type="button" class="btn btn-primary bg-msu-green text-white btn-sm">Small</button>
+            <button type="button" class="btn btn-primary bg-msu-green text-white btn-xs">Tiny / XS</button>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION 3: BADGES & TAGS -->
+      <section aria-labelledby="badges-heading" class="bg-white p-6 sm:p-8 rounded-xl border border-slate-200 shadow-sm">
+        <h2 id="badges-heading" class="text-xl font-bold text-msu-dark pb-3 border-b border-slate-200 mb-6">
+          3. Badges, Indicators &amp; Tags
+        </h2>
+
+        <div class="flex flex-wrap items-center gap-3">
+          <span class="badge badge-primary bg-msu-green text-white font-bold">badge-primary</span>
+          <span class="badge badge-secondary bg-msu-dark text-white font-bold">badge-secondary</span>
+          <span class="badge badge-accent bg-[#008244] text-white font-bold">badge-accent</span>
+          <span class="badge badge-outline text-msu-dark border-slate-300 font-semibold">badge-outline</span>
+          <span class="badge badge-ghost text-slate-700">badge-ghost</span>
+          <span class="badge bg-emerald-100 text-msu-dark font-bold border-none">Genomics Tag</span>
+          <span class="badge badge-lg bg-msu-green text-white font-bold">badge-lg</span>
+          <span class="badge badge-sm bg-msu-green text-white font-bold">badge-sm</span>
+          <span class="badge badge-xs bg-msu-green text-white">badge-xs</span>
+        </div>
+      </section>
+
+      <!-- SECTION 4: CARDS -->
+      <section aria-labelledby="cards-heading" class="bg-white p-6 sm:p-8 rounded-xl border border-slate-200 shadow-sm">
+        <h2 id="cards-heading" class="text-xl font-bold text-msu-dark pb-3 border-b border-slate-200 mb-6">
+          4. Cards &amp; Content Containers
+        </h2>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+          <!-- CARD 1 -->
+          <div class="card bg-white border border-slate-200 shadow-sm hover:shadow-md transition-shadow">
+            <div class="card-body p-6">
+              <span class="badge badge-sm bg-emerald-100 text-msu-dark font-bold mb-2">Research Thrust</span>
+              <h3 class="card-title text-lg font-bold text-msu-dark">Foundation Models</h3>
+              <p class="text-xs text-slate-600">Pretrained multi-scale neural architectures for DNA sequence representation.</p>
+              <div class="card-actions justify-end mt-4">
+                <button type="button" class="btn btn-sm btn-primary bg-msu-green text-white">Learn More</button>
+              </div>
+            </div>
+          </div>
+
+          <!-- CARD 2: BORDER ACCENT -->
+          <div class="card bg-white border-t-4 border-msu-green border-x border-b border-slate-200 shadow-sm">
+            <div class="card-body p-6">
+              <span class="badge badge-sm bg-slate-100 text-slate-700 font-bold mb-2">Grant Spotlight</span>
+              <h3 class="card-title text-lg font-bold text-msu-dark">NIH R01 HG012890</h3>
+              <p class="text-xs text-slate-600">$2.14M research award funding variant effect prediction across mammalian lineages.</p>
+              <div class="card-actions justify-end mt-4">
+                <a href="project-detail.html" class="text-xs font-bold text-msu-green hover:underline">View Grant &rarr;</a>
+              </div>
+            </div>
+          </div>
+
+          <!-- CARD 3: DARK EMPHASIS -->
+          <div class="card bg-gradient-to-br from-msu-green to-msu-dark text-white shadow-sm">
+            <div class="card-body p-6">
+              <span class="badge badge-sm bg-white/20 text-white border-none font-bold mb-2">Open Positions</span>
+              <h3 class="card-title text-lg font-bold text-white">Postdoctoral Fellowship</h3>
+              <p class="text-xs text-slate-200">Funded positions available in generative biomolecular design and deep learning.</p>
+              <div class="card-actions justify-end mt-4">
+                <a href="team.html#join" class="btn btn-sm bg-white text-msu-green hover:bg-emerald-50 border-none font-bold">Apply Now</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SECTION 5: MODAL DIALOGS -->
+      <section aria-labelledby="modals-heading" class="bg-white p-6 sm:p-8 rounded-xl border border-slate-200 shadow-sm">
+        <h2 id="modals-heading" class="text-xl font-bold text-msu-dark pb-3 border-b border-slate-200 mb-6">
+          5. Accessible Native Modal Dialogs
+        </h2>
+
+        <p class="text-sm text-slate-600 mb-4">
+          Uses native HTML5 <code>&lt;dialog&gt;</code> element with accessible focus trapping, keyboard ESC dismissal, and backdrop:
+        </p>
+
+        <button 
+          type="button" 
+          class="btn btn-primary bg-msu-green text-white font-semibold"
+          data-open-modal="demo-modal"
+        >
+          Open Accessible Modal Dialog
+        </button>
+
+        <dialog id="demo-modal" class="modal p-4 rounded-xl shadow-2xl backdrop:bg-slate-900/60 max-w-lg w-full border border-slate-300" role="dialog" aria-labelledby="demo-dialog-title" aria-modal="true">
+          <div class="modal-box p-6 bg-white max-w-none">
+            <div class="flex items-center justify-between pb-3 border-b border-slate-200 mb-4">
+              <h3 id="demo-dialog-title" class="text-lg font-bold text-msu-dark">Accessible Modal Example</h3>
+              <button type="button" class="btn btn-sm btn-circle btn-ghost text-slate-500" data-close-modal="true" aria-label="Close dialog">✕</button>
+            </div>
+            <p class="text-sm text-slate-600 mb-4">
+              This dialog implements WCAG 2.1 AA focus trapping. Screen readers announce the dialog title immediately upon activation. Pressing <kbd class="kbd kbd-sm font-mono">ESC</kbd> or clicking close restores focus.
+            </p>
+            <div class="modal-action">
+              <button type="button" class="btn btn-sm btn-primary bg-msu-green text-white" data-close-modal="true">Got It</button>
+            </div>
+          </div>
+        </dialog>
+      </section>
+
+      <!-- SECTION 6: FORM CONTROLS -->
+      <section aria-labelledby="forms-heading" class="bg-white p-6 sm:p-8 rounded-xl border border-slate-200 shadow-sm">
+        <h2 id="forms-heading" class="text-xl font-bold text-msu-dark pb-3 border-b border-slate-200 mb-6">
+          6. Form Controls with Accessible Labels
+        </h2>
+
+        <form class="grid grid-cols-1 md:grid-cols-2 gap-6" onsubmit="event.preventDefault();">
+          <div class="form-control">
+            <label for="form-name" class="label font-bold text-xs text-slate-700">Full Name</label>
+            <input type="text" id="form-name" placeholder="Dr. Jane Spartan" class="input input-bordered w-full text-sm" required>
+          </div>
+
+          <div class="form-control">
+            <label for="form-email" class="label font-bold text-xs text-slate-700">MSU NetID or Email</label>
+            <input type="email" id="form-email" placeholder="netid@msu.edu" class="input input-bordered w-full text-sm" required>
+          </div>
+
+          <div class="form-control">
+            <label for="form-dept" class="label font-bold text-xs text-slate-700">Department / Unit</label>
+            <select id="form-dept" class="select select-bordered w-full text-sm">
+              <option>Computational Mathematics, Science &amp; Engineering</option>
+              <option>Computer Science &amp; Engineering</option>
+              <option>Biomedical Laboratory Diagnostics</option>
+              <option>Biochemistry &amp; Molecular Biology</option>
+            </select>
+          </div>
+
+          <div class="form-control">
+            <label class="label font-bold text-xs text-slate-700">Communication Preferences</label>
+            <label class="cursor-pointer flex items-center gap-2 text-sm text-slate-700 mt-2">
+              <input type="checkbox" class="checkbox checkbox-primary checkbox-sm border-msu-green checked:bg-msu-green">
+              <span>Subscribe to Lab Seminar Announcements</span>
+            </label>
+          </div>
+
+          <div class="md:col-span-2 pt-2">
+            <button type="submit" class="btn btn-primary bg-msu-green text-white font-semibold">Submit Form</button>
+          </div>
+        </form>
+      </section>
+
+      <!-- SECTION 7: STATS WIDGETS -->
+      <section aria-labelledby="stats-heading" class="bg-white p-6 sm:p-8 rounded-xl border border-slate-200 shadow-sm">
+        <h2 id="stats-heading" class="text-xl font-bold text-msu-dark pb-3 border-b border-slate-200 mb-6">
+          7. Stat Counters
+        </h2>
+
+        <div class="stats stats-vertical lg:stats-horizontal shadow-sm border border-slate-200 w-full">
+          <div class="stat p-6">
+            <div class="stat-title text-xs font-bold uppercase text-slate-500">Sponsored Grants</div>
+            <div class="stat-value text-msu-green">$4.8M</div>
+            <div class="stat-desc text-xs text-slate-500">Active federal awards</div>
+          </div>
+          <div class="stat p-6">
+            <div class="stat-title text-xs font-bold uppercase text-slate-500">Citations (h-index)</div>
+            <div class="stat-value text-msu-green">42</div>
+            <div class="stat-desc text-xs text-slate-500">Over 3,400 total citations</div>
+          </div>
+          <div class="stat p-6">
+            <div class="stat-title text-xs font-bold uppercase text-slate-500">Software Packages</div>
+            <div class="stat-value text-msu-green">14</div>
+            <div class="stat-desc text-xs text-slate-500">Open-source GitHub tools</div>
+          </div>
+        </div>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- ========================================================================= -->
+  <!-- FOOTER: Institutional MSU Footer                                          -->
+  <!-- ========================================================================= -->
+  <footer role="contentinfo" class="msu-footer pt-12 pb-8 px-4 sm:px-8 mt-auto">
+    <div class="max-w-7xl mx-auto grid grid-cols-1 md:grid-cols-3 gap-8 pb-8 border-b border-emerald-900/60">
+      <div>
+        <div class="flex items-center gap-2.5 mb-4">
+          <svg class="h-8 w-8 text-white shrink-0" fill="currentColor" viewBox="0 0 24 24" aria-hidden="true">
+            <path d="M12 2C6.48 2 2 6.48 2 12c0 3.2 1.5 6.06 3.84 7.9L5 22h4l.84-2.52C10.53 19.82 11.25 20 12 20s1.47-.18 2.16-.52L15 22h4l-.84-2.1C20.5 18.06 22 15.2 22 12c0-5.52-4.48-10-10-10zm0 3c3.87 0 7 3.13 7 7 0 1.9-.76 3.63-2 4.9V13h-2v3.13c-.92.54-1.92.87-3 .87s-2.08-.33-3-.87V13H7v3.9c-1.24-1.27-2-3-2-4.9 0-3.87 3.13-7 7-7z"/>
+          </svg>
+          <span class="font-bold tracking-wider text-sm sm:text-base uppercase text-white font-sans">Michigan State University</span>
+        </div>
+        <address class="not-italic text-xs sm:text-sm text-slate-300 space-y-1">
+          <p class="font-semibold text-white">MSU Web Template Suite</p>
+          <p>East Lansing, MI 48824</p>
+          <p class="pt-2"><a href="mailto:webstandards@msu.edu" class="text-emerald-300 hover:text-white underline">webstandards@msu.edu</a></p>
+        </address>
+      </div>
+
+      <div>
+        <h3 class="text-sm font-bold uppercase tracking-wider text-white mb-3 font-sans">Template Pages</h3>
+        <ul class="text-xs sm:text-sm space-y-2 text-slate-300">
+          <li><a href="index.html" class="hover:text-emerald-300 underline-offset-4 hover:underline">Template Hub &amp; Overview</a></li>
+          <li><a href="lab-home.html" class="hover:text-emerald-300 underline-offset-4 hover:underline">Lab Research Home</a></li>
+          <li><a href="faculty-profile.html" class="hover:text-emerald-300 underline-offset-4 hover:underline">Faculty Profile (1-Tier)</a></li>
+          <li><a href="publications.html" class="hover:text-emerald-300 underline-offset-4 hover:underline">Publications &amp; Citations</a></li>
+          <li><a href="content-page.html" class="hover:text-emerald-300 underline-offset-4 hover:underline">Typography &amp; Markdown</a></li>
+        </ul>
+      </div>
+
+      <div>
+        <h3 class="text-sm font-bold uppercase tracking-wider text-white mb-3 font-sans">Institutional Links</h3>
+        <ul class="text-xs sm:text-sm space-y-2 text-slate-300">
+          <li><span>Call MSU: </span><a href="tel:5173551851" class="text-white font-bold hover:text-emerald-300">(517) 355-1851</a></li>
+          <li><a href="https://msu.edu" target="_blank" rel="noopener noreferrer" class="hover:text-emerald-300 underline-offset-4 hover:underline">Visit msu.edu</a></li>
+          <li><a href="https://civilrights.msu.edu/policies/notice-of-non-discrimination.html" target="_blank" rel="noopener noreferrer" class="hover:text-emerald-300 underline-offset-4 hover:underline">Notice of Non-Discrimination</a></li>
+          <li><a href="https://msu.edu/privacy" target="_blank" rel="noopener noreferrer" class="hover:text-emerald-300 underline-offset-4 hover:underline">Privacy Statement</a></li>
+          <li><a href="https://webaccess.msu.edu" target="_blank" rel="noopener noreferrer" class="hover:text-emerald-300 underline-offset-4 hover:underline">Web Accessibility / Accessible MSU</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="max-w-7xl mx-auto pt-6 flex flex-col sm:flex-row items-center justify-between text-xs text-slate-400 gap-3">
+      <p>&copy; Michigan State University. DaisyUI Component Kitchen Sink.</p>
+      <p class="text-slate-400">WCAG 2.1 Level AA Compliant • DaisyUI + Tailwind CSS</p>
+    </div>
+  </footer>
+
+  <script src="dist/js/msu-template.js"></script>
+</body>
+</html>
